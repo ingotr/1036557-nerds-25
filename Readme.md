@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Aleksandr Markovkin](https://up.htmlacademy.ru/htmlcss/25/user/1036557).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya)
 
 ---
 
