@@ -1,154 +1,149 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
-    <header class="main-header">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h2 class="visually-hidden">Секция хедера</h2>
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="">
+          <img src="img/logo.svg" width="160" height="70" alt="Логотип студии дизайна Нёрдс">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="studio.html">Студия</a></li>
+          <li><a href="clients.html">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li><a href="basket.html">Корзина</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="slider">
+    <div class="container">
+      <h2 class="visually-hidden">Секция слайдера</h2>
+    </div>
+  </section>
+  <main class="main-part">
+    <h2 class="visually-hidden">Студия дизайна Нёрдс</h2>
+
+    <section class="services">
+      <h2 class="visually-hidden">Секция услуг</h2>
       <div class="container">
-        <h2 class="visually-hidden">Секция хедера</h2>
-        <nav class="main-navigation">
-          <a class="main-header-logo" href="index.html">
-            <img src="img/logo.svg" width="160" height="70"
-             alt="Логотип студии дизайна Нёрдс">
-          </a>
-          <ul class="site-navigation">
-            <li><a href="studio.html">Студия</a></li>
-            <li><a href="clients.html">Клиенты</a></li>
-            <li><a href="catalog.html">Магазин</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-          </ul>
-          <ul class="user-navigation">
-            <li><a href="basket.html">Корзина</a></li>
-          </ul>
-       </nav>
-     </div>
-    </header>
-    <section class="slider">
-      <div class="container">
-        <h2 class="visually-hidden">Секция слайдера</h2>
+        <ul class="services-catalog">
+          <li class="sevices-catalog-item">
+            <figure>
+              <img src="img/sevices-web.jpg" width="300" height="150" alt="Веб-сайты">
+            </figure>
+            <h2>Веб-сайты</h2>
+            <p>Мир никогда не будет прежним после того
+              как увидит ваш сайт!</p>
+            <!-- Похоже, что эти иконки - векторная графика,
+              получается что формат может быть и svg? -->
+            <a class="button" href="#">Заказать</a>
+          </li>
+          <li class="sevices-catalog-item">
+            <figure>
+              <img src="img/sevices-mobileapps.jpg" width="300" height="150" alt="Приложения">
+            </figure>
+            <h2>Приложения</h2>
+            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a class="button" href="#">Заказать</a>
+          </li>
+          <li class="sevices-catalog-item">
+            <figure>
+              <img src="img/sevices-presentation.jpg" width="300" height="150" alt="Презентации">
+            </figure>
+            <h2>Презентации</h2>
+            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a class="button" href="#">Заказать</a>
+          </li>
+        </ul>
       </div>
     </section>
-    <main class="main-part">
-      <h2 class="visually-hidden">Студия дизайна Нёрдс</h2>
-
-      <section class="services">
-        <h2 class="visually-hidden">Секция услуг</h2>
-        <div class="container">
-          <ul class="services-catalog">
-            <li class="sevices-catalog-item">
-              <figure>
-                <img src="img/sevices-web.jpg" width="300"
-                  height="150" alt="Веб-сайты">
-              </figure>
-              <h2>Веб-сайты</h2>
-              <p>Мир никогда не будет прежним после того
-                 как увидит ваш сайт!</p>
-                <!-- Похоже, что эти иконки - векторная графика,
-              получается что формат может быть и svg? -->
-              <a class="button" href="#">Заказать</a>
-            </li>
-            <li class="sevices-catalog-item">
-              <figure>
-                <img src="img/sevices-mobileapps.jpg" width="300"
-                  height="150" alt="Приложения">
-              </figure>
-              <h2>Приложения</h2>
-              <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-              <a class="button" href="#">Заказать</a>
-            </li>
-            <li class="sevices-catalog-item">
-              <figure>
-                <img src="img/sevices-presentation.jpg" width="300"
-                  height="150" alt="Презентации">
-              </figure>
-              <h2>Презентации</h2>
-              <p>Вы даже не подозреваете,  насколько вы изумительны!</p>
-              <a class="button" href="#">Заказать</a>
-            </li>
+    <section class="about-studio">
+      <div class="container">
+        <div class="about-studio-item">
+          <b>Мы — маленькая, но гордая дизайн-студия из Краснодара. </b>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим
+            математический расчет превыше креатива.
+            Работаем не покладая рук, как роботы.</p>
+          <h3>Выполняем заказы на разработку</h3>
+          <ul>
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </div>
-      </section>
-      <section class="about-studio">
-        <div class="container">
-          <div class="about-studio-item">
-            <b>Мы — маленькая, но гордая дизайн-студия из Краснодара. </b>
-            <p>Исповедуем принципы минимализма и чистоты. Ставим
-               математический расчет превыше креатива.
-                Работаем не покладая рук, как роботы.</p>
-            <h3>Выполняем заказы на разработку</h3>
-            <ul>
-              <li>Веб-сайтов любой сложности</li>
-              <li>Мобильных приложений для iOS и Android</li>
-              <li>Слайдшоу и видео для корпоративных презентаций</li>
-            </ul>
-          </div>
-          <aside class="about-studio-item">
-            <img src="img/nerds-color-logo.jpg" width="360" height="220"
-             alt="Цветной логотип студии дизайна Нёрдс">
-             <b>C 2004 года Любим точность во всем:</b>
-             <table>
-               <tr>
-                 <td>146<span>%</span></td>
-                 <td>100<span>%</span></td>
-                 <td>50<span>%</span></td>
-               </tr>
-               <tr>
-                 <td>Уровень самоотдачи</td>
-                 <td>Соблюдение сроков</td>
-                 <td>Минимальная предоплата</td>
-               </tr>
-             </table>
-          </aside>
-        </div>
-      </section>
-      <section class="partners">
-        <h2 class="visually-hidden">Секция партнеров</h2>
-        <div class="container">
-          <ul class="partners-list">
-            <li><a href="https://htmlacademy.ru/intensive/htmlcss">
-              <img src='img/html-academy.jpg' width="230"
-               height="110" alt="Логотип Html Academy"></a>
-            </li>
-            <li><a href="#">
-              <img src='img/barbershop-borodinski.jpg' width="230"
-               height="110" alt="Логотип Барбершопа Бородинский"></a>
-            </li>
-            <li><a href="#">
-              <img src='img/pink.jpg' width="230"
-               height="110" alt="Логотип фирмы Pink"></a>
-            </li>
-            <li><a href="#">
-              <img src='img/mishka.jpg' width="230"
-               height="110" alt="Логотип интернет-магазина Мишка"></a>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="contacts">
-        <h2 class="visually-hidden">Секция контактов</h2>
-        <div class="container">
+        <aside class="about-studio-item">
+          <img src="img/nerds-color-logo.jpg" width="360" height="220" alt="Цветной логотип студии дизайна Нёрдс">
+          <b>C 2004 года Любим точность во всем:</b>
+          <table>
+            <tr>
+              <td>146<span>%</span></td>
+              <td>100<span>%</span></td>
+              <td>50<span>%</span></td>
+            </tr>
+            <tr>
+              <td>Уровень самоотдачи</td>
+              <td>Соблюдение сроков</td>
+              <td>Минимальная предоплата</td>
+            </tr>
+          </table>
+        </aside>
+      </div>
+    </section>
+    <section class="partners">
+      <h2 class="visually-hidden">Секция партнеров</h2>
+      <div class="container">
+        <ul class="partners-list">
+          <li><a href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src='img/html-academy.jpg' width="230" height="110" alt="Логотип Html Academy"></a>
+          </li>
+          <li><a href="#">
+              <img src='img/barbershop-borodinski.jpg' width="230" height="110"
+                alt="Логотип Барбершопа Бородинский"></a>
+          </li>
+          <li><a href="#">
+              <img src='img/pink.jpg' width="230" height="110" alt="Логотип фирмы Pink"></a>
+          </li>
+          <li><a href="#">
+              <img src='img/mishka.jpg' width="230" height="110" alt="Логотип интернет-магазина Мишка"></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="contacts">
+      <h2 class="visually-hidden">Секция контактов</h2>
+      <div class="container">
         <!-- Здесь будет карта -->
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="container">
+        <div>
+          <b>Давайте дружить, это выгодно!</b>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
-      </section>
-      <footer class="main-footer">
-        <div class="container">
-            <div>
-              <b>Давайте дружить, это выгодно!</b>
-              <p>Скидка 10% для друзей из социальных сетей.</p>
-            </div>
-            <ul>
-              <li><a class="social-button" href="#">Вконтакте</a></li>
-              <li><a class="social-button" href="#">Фейсбук</a></li>
-              <li><a class="social-button" href="#">Инстаграм</a></li>
-            </ul>
-        </div>
-      </footer>
+        <ul>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+        </ul>
+      </div>
+    </footer>
 
-      <section class="modal modal-writeus">
-        <h2>Напишите нам</h2>
-      </section>
-    </main>
-  </body>
+    <section class="modal modal-writeus">
+      <h2>Напишите нам</h2>
+    </section>
+  </main>
+</body>
+
 </html>
