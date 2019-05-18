@@ -30,16 +30,44 @@
   <section class="slider">
     <div class="container">
       <h2 class="visually-hidden">Секция слайдера</h2>
-      <p>Долго, дорого, скрупулезно.</p>
-      <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-      <a class="button" href="#">Узнать больше</a>
-      <ul class="slides">
-        <li class="slide showing"><img src="img/slides-1.png" width="698" height="413" alt="Слайд"></li>
-      </ul>
-      <ul class="slides-indicators">
-        <li class="indicator showing"><img src="img/slider-indicator-active.svg" width="18" height="18" alt=""></li>
-        <li class="indicator"><img src="img/slider-indicator.svg" width="18" height="18" alt=""></li>
-        <li class="indicator"><img src="img/slider-indicator.svg" width="18" height="18" alt=""></li>
+      <input type="radio" id="btn-1">
+      <input type="radio" id="btn-2">
+      <input type="radio" id="btn-3">
+      <div class="slides-indicators">
+        <label for="btn-1"></label>
+        <label for="btn-2"></label>
+        <label for="btn-3"></label>
+      </div>
+      <ul class="slider-catalog">
+        <li class="slide showing">
+          <div>
+            <p class="slider-title">Долго, дорого, скрупулезно.</p>
+            <p>Математически выверенный дизайн для вашего
+              сайта или мобильного приложения.</p>
+            <a class="button" href="#">Узнать больше</a>
+            <img src="img/slides-1.png" width="698" height="413" alt="Слайд">
+          </div>
+        </li>
+        <li class="slide showing">
+          <div>
+            <p class="slider-title">Любим математику
+              как никто другой.</p>
+            <p>Никакого креатива, только математические формулы
+              для расчета идеальных пропорций.</p>
+            <a class="button" href="#">Узнать больше</a>
+            <img src="img/slides-2.png" width="698" height="413" alt="Слайд">
+          </div>
+        </li>
+        <li class="slide showing">
+          <div>
+            <p class="slider-title">Только ночь,
+              только хардкор</p>
+            <p>Работать днем, как все? Мы против этого.
+              Ближе к полуночи работа только начинается.</p>
+            <a class="button" href="#">Узнать больше</a>
+            <img src="img/slides-3.png" width="698" height="413" alt="Слайд">
+          </div>
+        </li>
       </ul>
     </div>
   </section>

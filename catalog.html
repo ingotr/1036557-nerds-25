@@ -36,51 +36,103 @@
       <div class="container">
         <aside class="filters">
           <h2 class="visually-hidden">Фильтр макетов</h2>
-          <!-- Здесь будет форма -->
-          <div class="filters-price">
-            <p>Стоимость:</p>
-            <img src="img/price-slider.png" width="261" height="81" alt="">
-            <table>
-              <tr>
-                <td>От</td>
-                <td class="price-highlight">0</td>
-                <td>До</td>
-                <td class="price-highlight">15 000</td>
-              </tr>
-            </table>
-          </div>
-          <div class="filters-grids">
-            <p>Сетка:</p>
-            <ul>
-              <li class="filters-grids-current">Адаптивная</li>
-              <li>Фиксированная</li>
-              <li>Резиновая</li>
-            </ul>
-          </div>
-          <div class="filters-features">
-            <p>Особенности:</p>
-            <ul>
-              <li class="filters-features-checked">Слайдер</li>
-              <li>Блок преимуществ</li>
-              <li class="filters-features-checked">Новости</li>
-              <li>Галерея</li>
-              <li>Корзина</li>
-            </ul>
-          </div>
-          <a class="filters-button" href="#">Показать</a>
+          <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="filters-price">
+              <p>Стоимость:</p>
+              <img src="img/price-slider.png" width="261" height="81" alt="">
+              <table>
+                <tr>
+                  <td>От</td>
+                  <td class="price-highlight">0</td>
+                  <td>До</td>
+                  <td class="price-highlight">15 000</td>
+                </tr>
+              </table>
+            </div>
+            <div class="filters-grids">
+              <p>Сетка:</p>
+              <ul>
+                <li class="filters-grids">
+                  <label>
+                    <input type="radio" name="grid" value="Адаптивная">
+                    Адаптивная
+                  </label>
+                </li>
+                <li class="filters-grids">
+                  <label>
+                    <input type="radio" name="grid" value="Фиксированная">
+                    Фиксированная
+                  </label>
+                </li>
+                <li class="filters-grids">
+                  <label>
+                    <input type="radio" name="grid" value="Резиновая">
+                    Резиновая
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="filters-features">
+              <p>Особенности:</p>
+              <ul>
+                <li class="filters-features-item">
+                  <label>
+                    <input type="checkbox" name="features" value="Слайдер">
+                    Слайдер
+                  </label>
+                </li>
+                <li class="filters-features-item">
+                  <label>
+                    <input type="checkbox" name="features" value="Блок преимуществ">
+                  Блок преимуществ
+                  </label>
+                </li>
+                <li class="filters-features-item">
+                  <label>
+                    <input type="checkbox" name="features" value="Новости">
+                    Новости
+                  </label>
+                </li>
+                <li class="filters-features-item">
+                  <label>
+                    <input type="checkbox" name="features" value="Галерея">
+                    Галерея
+                  </label>
+                </li>
+                <li class="filters-features-item">
+                  <label>
+                    <input type="checkbox" name="features" value="Корзина">
+                    Корзина
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <button class="button" type="submit">Показать</button>
+            <!-- <a class="filters-button" href="#">Показать</a> -->
+          </form>
         </aside>
         <div class="catalog-content">
           <div class="sorting-layout">
             <h2 class="visually-hidden">Фильтр сортировки</h2>
             <p>Сортировать:</p>
             <ul>
-              <li><a class="sorting-button-current">По цене</a></li>
-              <li><a class="sorting-button">По типу</a></li>
-              <li><a class="sorting-button">По названию</a></li>
+              <li><a class="sorting-button-current" href="#">По цене</a></li>
+              <li><a class="sorting-button" href="#">По типу</a></li>
+              <li><a class="sorting-button" href="#">По названию</a></li>
             </ul>
             <ul>
-              <li><img src="img/catalog-sorting-down.svg" width="11" height="10" alt=""></li>
-              <li><img src="img/catalog-sorting-up.svg" width="11" height="10" alt=""></li>
+              <li>
+                <a class="sorting-button-descending" href="#"
+                aria-label="Сортировать по убыванию">
+                  <img src="img/catalog-sorting-down.svg" width="11" height="10" alt="">
+                </a>
+              </li>
+              <li>
+                <a class="sorting-button-ascending" href="#"
+                aria-label="Сортировать по возрастанию">
+                  <img src="img/catalog-sorting-up.svg" width="11" height="10" alt="">
+                </a>
+              </li>
             </ul>
           </div>
           <h2 class="visually-hidden">Список макетов</h2>
@@ -97,7 +149,8 @@
               <img src="img/img-pink.jpg" width="360" height="576" alt="Карточка макета Pink">
             </li>
             <li class="catalog-item">
-              <img src="img/img-barbershop.jpg" width="360" height="576" alt="Карточка макета Бородинский">
+              <img src="img/img-barbershop.jpg" width="360" height="576"
+               alt="Карточка макета Бородинский">
             </li>
             <li class="catalog-item">
               <img src="img/img-mishka.jpg" width="360" height="576" alt="Карточка макета Mishka">
@@ -187,13 +240,13 @@
             <input type="text" name="name" value="" placeholder="Имя Фамилия">
           </label>
         </p>
-        <p>
+        <p class="writeus-item">
           <label>
             Ваш e-mail:
             <input type="text" name="email" value="" placeholder="email@example.com">
           </label>
         </p>
-        <p>
+        <p class="writeus-item">
           <label>
             Текст письма:
             <input type="text" name="email-text" value="" placeholder="В свободной форме">
