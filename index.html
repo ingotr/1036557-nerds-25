@@ -57,8 +57,6 @@
             <h2>Веб-сайты</h2>
             <p>Мир никогда не будет прежним после того
               как увидит ваш сайт!</p>
-            <!-- Похоже, что эти иконки - векторная графика,
-              получается что формат может быть и svg? -->
             <a class="button" href="#">Заказать</a>
           </li>
           <li class="services-catalog-item">
@@ -116,24 +114,43 @@
       <h2 class="visually-hidden">Секция партнеров</h2>
       <div class="container">
         <ul class="partners-list">
-          <li><a href="https://htmlacademy.ru/intensive/htmlcss">
-              <img src='img/html-academy-logo.svg' width="199" height="68" alt="Логотип Html Academy"></a>
+          <li>
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src='img/html-academy-logo.svg' width="199" height="68" alt="Логотип Html Academy">
+            </a>
           </li>
-          <li><a href="#">
+          <li>
+            <a href="#">
               <img src='img/barbershop-borodinsky-logo.svg' width="209" height="90"
-                alt="Логотип Барбершопа Бородинский"></a>
+                alt="Логотип Барбершопа Бородинский">
+            </a>
           </li>
-          <li><a href="#">
-              <img src='img/pink-logo.svg' width="185" height="52" alt="Логотип фирмы Pink"></a>
+          <li>
+            <a href="#">
+              <img src='img/pink-logo.svg' width="185" height="52" alt="Логотип фирмы Pink">
+            </a>
           </li>
-          <li><a href="#">
-              <img src='img/mishka-logo.svg' width="173" height="84" alt="Логотип интернет-магазина Мишка"></a>
+          <li>
+            <a href="#">
+              <img src='img/mishka-logo.svg' width="173" height="84" alt="Логотип интернет-магазина Мишка">
+            </a>
           </li>
         </ul>
       </div>
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Секция контактов</h2>
+      <div>
+        <h3>NЁRDS DESIGN STUDIO</h3>
+        <p>191186, Санкт-Петербург,
+          ул. Б. Конюшенная, д. 19/8
+
+          тел. +7 (812) 275-75-75
+        </p>
+        <button class="button modal-writeus" type="button">
+          Напишите нам
+        </button>
+      </div>
       <div class="container">
         <!-- Здесь будет карта -->
       </div>
@@ -145,18 +162,56 @@
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
         <ul>
-          <li><a class="social-button" href="#"><img src="img/vk-icon.svg" width="26" height="15" alt="">Вконтакте</a>
+          <li>
+            <a class="social-button" href="#" aria-label="Нёрдс вконтакте">
+              <img src="img/vk-icon.svg" width="26" height="15" alt="">
+              Вконтакте
+            </a>
           </li>
-          <li><a class="social-button" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="">Фейсбук</a>
+          <li>
+            <a class="social-button" href="#" aria-label="Нёрдс на фейсбуке">
+              <img src="img/fb-icon.svg" width="12" height="22" alt="">
+              Фейсбук
+            </a>
           </li>
-          <li><a class="social-button" href="#"><img src="img/insta-icon.svg" width="21" height="21"
-                alt="">Инстаграм</a></li>
+          <li>
+            <a class="social-button" href="#" aria-label="Нёрдс в инстаграмме">
+              <img src="img/insta-icon.svg" width="21" height="21" alt="">
+              Инстаграм
+            </a>
+          </li>
         </ul>
       </div>
     </footer>
 
     <section class="modal modal-writeus">
-      <h2>Напишите нам</h2>
+      <div class="container">
+        <h2>Напишите нам</h2>
+        <button class="modal-close" type="button" aria-label="Закрыть форму обратной связи">
+          <img src="img/close-cross.svg" width="21" height="21" alt="">
+        </button>
+        <form class="writeus-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="writeus-item">
+            <label>
+              Ваше имя:
+              <input type="text" name="name" value="" placeholder="Имя Фамилия">
+            </label>
+          </p>
+          <p>
+            <label>
+              Ваш e-mail:
+              <input type="text" name="email" value="" placeholder="email@example.com">
+            </label>
+          </p>
+          <p>
+            <label>
+              Текст письма:
+              <input type="text" name="email-text" value="" placeholder="В свободной форме">
+            </label>
+          </p>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+      </div>
     </section>
   </main>
 </body>

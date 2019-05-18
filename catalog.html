@@ -11,7 +11,7 @@
     <div class="container">
       <h2 class="visually-hidden">Секция хедера</h2>
       <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
+        <a class="main-header-logo" href="index.html" aria-label="Перейти на главную страницу студии дизайна Нёрдс">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии дизайна Нёрдс">
         </a>
         <ul class="site-navigation">
@@ -87,9 +87,11 @@
           <ul class="catalog-list">
             <li class="catalog-item-hover">
               <img src="img/img-sedona.jpg" width="360" height="576" alt="Карточка макета Sedona">
-              <a href="catalog-item-sedona.html">Sedona</a>
-              <p>Информационный сайт для туристов</p>
-              <a class="buy-button" href="#">9 900<span> РУБ.</span></a>
+              <div class="catalog-item-description">
+                <a href="catalog-item-sedona.html">Sedona</a>
+                <p>Информационный сайт для туристов</p>
+                <button class="buy-button">9 900<span> РУБ.</span></button>
+              </div>
             </li>
             <li class="catalog-item">
               <img src="img/img-pink.jpg" width="360" height="576" alt="Карточка макета Pink">
@@ -111,10 +113,17 @@
         <div class="pagination">
           <ul class="pagination-list">
             <li class="pagination-item pagination-item-current">
-              <a href="#">1</a></li>
-            <li class="pagination-item"><a href="#">2</a></li>
-            <li class="pagination-item"><a href="#">3</a></li>
-            <li class="pagination-item"><a href="#">Следующая</a></li>
+              <a href="#">1</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#">Следующая</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -122,6 +131,17 @@
   </main>
   <section class="contacts">
     <h2 class="visually-hidden">Секция контактов</h2>
+    <div>
+      <h3>NЁRDS DESIGN STUDIO</h3>
+      <p>191186, Санкт-Петербург,
+        ул. Б. Конюшенная, д. 19/8
+
+        тел. +7 (812) 275-75-75
+      </p>
+      <button class="button modal-writeus" type="button">
+        Напишите нам
+      </button>
+    </div>
     <div class="container">
       <!-- Здесь будет карта -->
     </div>
@@ -133,16 +153,55 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
       <ul>
-        <li><a class="social-button" href="#"><img src="img/vk-icon.svg" width="26" height="15" alt="">Вконтакте</a>
+        <li>
+          <a class="social-button" href="#" aria-label="Нёрдс вконтакте">
+            <img src="img/vk-icon.svg" width="26" height="15" alt="">
+            Вконтакте
+          </a>
         </li>
-        <li><a class="social-button" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="">Фейсбук</a></li>
-        <li><a class="social-button" href="#"><img src="img/insta-icon.svg" width="21" height="21" alt="">Инстаграм</a>
+        <li>
+          <a class="social-button" href="#" aria-label="Нёрдс на фейсбуке">
+            <img src="img/fb-icon.svg" width="12" height="22" alt="">
+            Фейсбук
+          </a>
+        </li>
+        <li>
+          <a class="social-button" href="#" aria-label="Нёрдс в инстаграмме">
+            <img src="img/insta-icon.svg" width="21" height="21" alt="">
+            Инстаграм
+          </a>
         </li>
       </ul>
     </div>
   </footer>
   <section class="modal modal-writeus">
-    <h2>Напишите нам</h2>
+    <div class="container">
+      <h2>Напишите нам</h2>
+      <button class="modal-close" type="button" aria-label="Закрыть форму обратной связи">
+        <img src="img/close-cross.svg" width="21" height="21" alt="">
+      </button>
+      <form class="writeus-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="writeus-item">
+          <label>
+            Ваше имя:
+            <input type="text" name="name" value="" placeholder="Имя Фамилия">
+          </label>
+        </p>
+        <p>
+          <label>
+            Ваш e-mail:
+            <input type="text" name="email" value="" placeholder="email@example.com">
+          </label>
+        </p>
+        <p>
+          <label>
+            Текст письма:
+            <input type="text" name="email-text" value="" placeholder="В свободной форме">
+          </label>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+    </div>
   </section>
 </body>
 
