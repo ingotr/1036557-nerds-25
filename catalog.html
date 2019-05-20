@@ -37,25 +37,26 @@
           <h2 class="visually-hidden">Фильтр макетов</h2>
           <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset>
-              <legend>Форма фильтров по цене, типу макета и его особенностям</legend>
+              <legend>Стоимость:</legend>
               <div class="filters-price">
-                <p>Стоимость:</p>
                 <img src="img/price-slider.png" width="261" height="81" alt="">
-                <table>
-                  <tr>
-                    <td>От</td>
-                    <td class="price-highlight">0</td>
-                    <td>До</td>
-                    <td class="price-highlight">15 000</td>
-                  </tr>
-                </table>
+                <label>
+                  От
+                  <input type=text name="price-low" value="0">
+                </label>
+                <label>
+                  До
+                  <input type=text name="price-high" value="15 000">
+                </label>
               </div>
+            </fieldset>
+            <fieldset>
+              <legend>Сетка:</legend>
               <div class="filters-grids">
-                <p>Сетка:</p>
                 <ul>
                   <li class="filters-grids">
                     <label>
-                      <input type="radio" name="grid" value="Адаптивная">
+                      <input type="radio" name="grid" value="Адаптивная" checked>
                       Адаптивная
                     </label>
                   </li>
@@ -73,12 +74,14 @@
                   </li>
                 </ul>
               </div>
+            </fieldset>
+            <fieldset>
+              <legend>Особенности:</legend>
               <div class="filters-features">
-                <p>Особенности:</p>
                 <ul>
                   <li class="filters-features-item">
                     <label>
-                      <input type="checkbox" name="features" value="Слайдер">
+                      <input type="checkbox" name="features" value="Слайдер" checked>
                       Слайдер
                     </label>
                   </li>
@@ -90,7 +93,7 @@
                   </li>
                   <li class="filters-features-item">
                     <label>
-                      <input type="checkbox" name="features" value="Новости">
+                      <input type="checkbox" name="features" value="Новости" checked>
                       Новости
                     </label>
                   </li>
@@ -108,9 +111,9 @@
                   </li>
                 </ul>
               </div>
-              <button class="button" type="submit">Показать</button>
               <!-- <a class="filters-button" href="#">Показать</a> -->
             </fieldset>
+            <button class="button" type="submit">Показать</button>
           </form>
         </div>
         <div class="catalog-content">
@@ -262,25 +265,25 @@
         <img src="img/close-cross.svg" width="21" height="21" alt="">
       </button>
       <form class="writeus-form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="writeus-item">
-            <label>
-              Ваше имя:
-              <input type="text" name="name" value="" placeholder="Имя Фамилия">
-            </label>
-          </p>
-          <p class="writeus-item">
-            <label>
-              Ваш e-mail:
-              <input type="text" name="email" value="" placeholder="email@example.com">
-            </label>
-          </p>
-          <p class="writeus-item">
-            <label>
-              Текст письма:
-              <input type="text" name="email-text" value="" placeholder="В свободной форме">
-            </label>
-          </p>
-          <button class="button" type="submit">Отправить</button>
+        <p class="writeus-item">
+          <label>
+            Ваше имя:
+            <input type="text" name="name" value="" placeholder="Имя Фамилия">
+          </label>
+        </p>
+        <p class="writeus-item">
+          <label>
+            Ваш e-mail:
+            <input type="text" name="email" value="" placeholder="email@example.com">
+          </label>
+        </p>
+        <p class="writeus-item">
+          <label>
+            Текст письма:
+            <input type="text" name="email-text" value="" placeholder="В свободной форме">
+          </label>
+        </p>
+        <button class="button" type="submit">Отправить</button>
       </form>
     </div>
   </section>
