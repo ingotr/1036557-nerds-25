@@ -1,0 +1,235 @@
+/* Основные правила */
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283136;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Visually hidden */
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/* Раздел навигации */
+
+header,
+.slider {
+  background-color: #eeeeee;
+}
+
+.main-navigation {
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover {
+  color: #fb565a;
+}
+
+.site-navigation a:focus,
+.user-navigation a:focus {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.user-navigation a::before {
+  background-image: url("../img/cart-icon.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.main-header-logo:hover {
+  opacity: 0.8;
+}
+
+.main-header-logo:focus {
+  opacity: 0.3;
+}
+
+/* Раздел слайдера */
+
+
+/* Раздел услуг */
+
+.services-catalog {
+  list-style: none;
+}
+
+.services-catalog-item h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.services-catalog-item:first-child .button {
+  background-color: #fb565a;
+}
+
+.services-catalog-item:first-child .button:hover {
+  background-color: #e74246;
+}
+
+.services-catalog-item:first-child .button:focus {
+  background-color: #d7373b;
+}
+
+.services-catalog-item:nth-child(2n) .button {
+  background-color: #00ca74;
+}
+
+.services-catalog-item:nth-child(2n) .button:hover {
+  background-color: #00bc6c;
+}
+
+.services-catalog-item:nth-child(2n) .button:focus {
+  background-color: #00aa62;
+}
+
+.services-catalog-item:last-child .button {
+  background-color: #efc84a;
+}
+
+.services-catalog-item:last-child .button:hover {
+  background-color: #eab534;
+}
+
+.services-catalog-item:last-child .button:focus {
+  background-color: #e5a722;
+}
+
+.services {
+  border-bottom: 2px solid #eeeeee;
+}
+
+/* Раздел о студии */
+
+.about-studio b {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+.about-studio h3 {
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.about-studio-item ul{
+  list-style: none;
+}
+
+.about-studio-item:last-child b{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+tr:first-child td {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 10.06px;
+}
+
+tr:last-child td {
+  color: #283136;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.partners-list li {
+  opacity: 0.2;
+}
+
+.partners-list li:hover {
+  opacity: 1;
+}
+
+.partners-list li:focus {
+  opacity: 0.1;
+}
+
+.partners {
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+}
+
+/* Раздел контактов */
+
+.contacts .button {
+  background-color: #fb565a;
+}
+
+.contacts .button:hover {
+  background-color: #e74246;
+}
+
+.contacts .button:focus {
+  background-color: #d7373b;
+}
+
+/* Раздел футера */
+
+.main-footer b {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #000000;
+}
+
+.main-footer p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #444444;
+}
+
+.main-footer .social-button {
+  background-color: #e1e1e1;
+}
+
+/* Раздел каталога */
+
+/* Раздел модального окна */
+
+.modal {
+  display: none;
+}
