@@ -44,11 +44,11 @@
               <div class="filters-price">
                 <img src="img/price-slider.png" width="261" height="81" alt="">
                 <label>
-                  От
+                  ОТ
                   <input type=text name="price-low" value="0">
                 </label>
                 <label>
-                  До
+                  ДО
                   <input type=text name="price-high" value="15 000">
                 </label>
               </div>
@@ -57,21 +57,24 @@
               <legend>Сетка:</legend>
               <div class="filters-grids">
                 <ul>
-                  <li class="filters-grids">
-                    <label>
+                  <li class="filters-grids-item">
+                    <label class="radio-container">
                       <input type="radio" name="grid" value="Адаптивная" checked>
+                      <span class="radio-mark"></span>
                       Адаптивная
                     </label>
                   </li>
-                  <li class="filters-grids">
-                    <label>
+                  <li class="filters-grids-item">
+                    <label class="radio-container">
                       <input type="radio" name="grid" value="Фиксированная">
+                      <span class="radio-mark"></span>
                       Фиксированная
                     </label>
                   </li>
-                  <li class="filters-grids">
-                    <label>
+                  <li class="filters-grids-item">
+                    <label class="radio-container">
                       <input type="radio" name="grid" value="Резиновая">
+                      <span class="radio-mark"></span>
                       Резиновая
                     </label>
                   </li>
@@ -124,7 +127,7 @@
             <h2 class="visually-hidden">Фильтр сортировки</h2>
             <p>Сортировать:</p>
             <ul>
-              <li><a class="sorting-button-current" href="#">По цене</a></li>
+              <li><a class="sorting-button sorting-button-current" href="#">По цене</a></li>
               <li><a class="sorting-button" href="#">По типу</a></li>
               <li><a class="sorting-button" href="#">По названию</a></li>
             </ul>
