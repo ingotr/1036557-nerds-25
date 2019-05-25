@@ -309,17 +309,18 @@ fieldset {
 .radio-mark {
   position: absolute;
   top: 0;
-  left: -10px;
-  height: 20px;
-  width: 20px;
+  left: -5px;
+  height: 15px;
+  width: 15px;
 
   background-color: #ffffff;
   border: 5px solid #4d4d4d;
   border-radius: 50%;
+  opacity: 0.4;
 }
 
 .radio-container:hover input ~ .radio-mark{
-  opacity: 0.4;
+  opacity: 1;
 }
 
 .radio-container input:checked ~ .radio-mark{
@@ -337,10 +338,10 @@ fieldset {
 }
 
 .radio-container .radio-mark:after {
-  top: 5px;
-	left: 5px;
-	width: 10px;
-	height: 10px;
+  top: 4px;
+	left: 4px;
+	width: 8px;
+	height: 8px;
   border-radius: 50%;
 
 	background-color: #4d4d4d;
@@ -390,6 +391,42 @@ fieldset {
 
   background-color: #eeeeee;
   border: none;
+}
+
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkbox-mark {
+  position: absolute;
+  top: 0;
+  left: -5px;
+  height: 25px;
+  width: 25px;
+  background-image: url("../img/filters-features.svg");
+  background-repeat: no-repeat;
+  opacity: 0.4;
+}
+
+.checkbox-container:hover input ~ .checkbox-mark {
+  opacity: 1;
+}
+
+.checkbox-container input:checked ~ .checkbox-mark {
+  background-image: url("../img/filters-features-checked.svg");
+  background-repeat: no-repeat;
 }
 
 .filters-form .button:hover {
