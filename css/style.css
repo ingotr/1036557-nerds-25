@@ -287,10 +287,10 @@ fieldset {
 
 .radio-mark {
   position: absolute;
-  top: 0;
-  left: -5px;
-  height: 15px;
-  width: 15px;
+  top: -3px;
+  left: -4px;
+  height: 16px;
+  width: 16px;
 
   background-color: #ffffff;
   border: 5px solid #4d4d4d;
@@ -468,11 +468,58 @@ fieldset {
 /* Раздел каталога */
 
 .catalog-list {
+  padding: 0;
+  margin: 0;
+
   list-style: none;
 }
 
+.catalog-item {
+  position: relative;
+  width: 360px;
+
+  border-top: 40px solid #eaeaea;
+  border-radius: 3px;
+}
+
+.catalog-item::after{
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-color: #ffffff;
+  box-shadow: 25px 0 0 #ffffff, 50px 0 0 #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: -30px;
+  left: 15px;
+}
+
+.catalog-item:hover {
+  border-top-color: #4d4d4d;
+  box-shadow: 0 3px 8px 0 #000000;
+}
+
 .catalog-item-description {
-  /* display: none; */
+  width: 360px;
+  height: 231px;
+  line-height: 210px;
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  background-color: #eeeeee;
+  text-align: center;
+  display: none;
+}
+
+.catalog-item:hover .catalog-item-description{
+  display: block;
+}
+
+.item-container {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .catalog-item-description a {
@@ -517,14 +564,6 @@ fieldset {
   background-color: #d7373b;
 }
 
-.catalog-item .item-browser:before{
-  content: url("../img/browser.png");
-}
-
-.catalog-item:hover {
-
-}
-
 .pagination-list {
   list-style: none;
 }
@@ -535,7 +574,7 @@ fieldset {
 
   font-size: 16px;
   font-weight: 500;
-  line-height: 18px;
+  line-height: 50px;
   text-align: center;
   vertical-align: middle;
   color: #000000;
