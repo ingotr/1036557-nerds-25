@@ -1,7 +1,7 @@
 /*  */
 /* Основные правила */
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 
   font-family: "Roboto", Arial, sans-serif;
@@ -285,6 +285,8 @@ tr:last-child td {
 .filters-grids ul,
 .filters-features ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 fieldset {
@@ -516,7 +518,7 @@ fieldset {
 
 .catalog-item:hover {
   border-top-color: #4d4d4d;
-  box-shadow: 0 3px 8px 0 #000000;
+  box-shadow: 0 1px 5px #000000;
 }
 
 .catalog-item-description {
@@ -584,7 +586,11 @@ fieldset {
 }
 
 .pagination-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .pagination-item {
@@ -767,13 +773,16 @@ body > * > * > * > * > *{
 }
 
 .container {
-  display: flex;
-  justify-content: space-between;
   padding: 50px 20px;
   width: 1160px;
   margin: 0 auto;
 
   /* background-color: rgba(33, 33, 173, 0.397); */
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
 }
 
 .site-title {
@@ -816,10 +825,10 @@ body > * > * > * > * > *{
   padding-bottom: 54px;
 }
 
-.about-wrapper {
+/* .about-wrapper {
   display: flex;
   justify-content: space-between;
-}
+} */
 
 .about-studio-item {
   width: 660px;
@@ -868,7 +877,7 @@ body > * > * > * > * > *{
 
 .filters {
   margin-top: 60px;
-  margin-bottom: 1382px;
+  margin-bottom: 0;
   width: 261px;
 }
 
@@ -906,9 +915,9 @@ body > * > * > * > * > *{
 }
 
 .contacts {
-  display: flex;
+  /* display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: center; */
   margin: 0;
   padding: 0;
 
@@ -926,7 +935,10 @@ body > * > * > * > * > *{
 } */
 
 .main-footer {
-  margin: 69px auto;
+  margin-top: 69px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
 }
 
 .social-buttons-list {
@@ -937,11 +949,11 @@ body > * > * > * > * > *{
   padding: 0;
 }
 
-.main-footer-wrapper {
+/* .main-footer-wrapper {
   display: flex;
-}
+} */
 
 .footer-text {
   width: 545px;
-  margin-left: 139px;
+  /* margin-left: 139px; */
 }
