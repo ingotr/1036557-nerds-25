@@ -124,6 +124,7 @@ header,
 .slide .slide-title {
   margin: 0;
   padding: 0;
+  padding-top: 60px;
   margin-bottom: 28px;
 
   font-size: 55px;
@@ -136,18 +137,8 @@ header,
 
 .slide .button {
   margin: 0;
-
-  padding: 0;
-  padding-top: 18px;
-  padding-right: 54px;
-  padding-bottom: 18px;
-  padding-left: 54px;
-
-  line-height: 50px;
-  vertical-align: middle;
-
-  border-radius: 3px;
-
+  padding-right: 55px;
+  padding-left: 55px;
   width: 240px;
   height: 50px;
 
@@ -160,6 +151,12 @@ header,
 
 .slide .button:focus {
   background-color: #d7373b;
+}
+
+.slide-image {
+  margin: 0;
+  padding: 0;
+  margin-left: 55px;
 }
 
 /*  */
@@ -181,16 +178,54 @@ header,
 
 .services-catalog {
   list-style: none;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .services-catalog-item h2 {
+  padding: 0;
+  margin: 0;
+  margin-top: 17px;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
 }
 
+.services-catalog-item p {
+  margin: 0;
+  padding: 0;
+  margin-top: 16px;
+}
+
+.services-catalog-item:nth-child(1) p {
+  width: 259px;
+}
+
+.services-catalog-item:nth-child(2) p {
+  width: 236px;
+}
+
+.services-catalog-item:nth-child(3) p {
+  width: 216px;
+}
+
 .button {
+  margin: 0;
+
+  padding: 0;
+  padding-top: 15px;
+  padding-right: 40px;
+  padding-bottom: 15px;
+  padding-left: 41px;
+
+  line-height: 50px;
+  vertical-align: middle;
+
+  border-radius: 3px;
+
+  width: 160px;
+  height: 50px;
+
   font: inherit;
 
   text-align: center;
@@ -236,38 +271,82 @@ header,
 }
 
 .services {
-  border-bottom: 2px solid #eeeeee;
+
 }
 
 /*  */
 /* Раздел о студии */
 
 .about-studio b {
+  margin-top: 34px;
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
 }
 
 .about-studio h3 {
+  margin: 0;
+  padding: 0;
+  margin-top: 38px;
+
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
 }
 
 .about-studio-item ul{
+  margin: 0;
+  padding: 0;
+  margin-top: 24px;
+  margin-left: 36px;
+
   list-style: none;
 }
 
 .about-studio-item ul li{
   line-height: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.about-studio-item ul li:before{
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -37px;
+  line-height: 24px;
+  height: 2px;
+  width: 27px;
+  border-bottom: 2px solid #fb565a;
+}
+
+.about-studio-item:first-child{
+  margin-top: 34px;
+}
+
+.about-studio-item:first-child p{
+  margin: 0;
+  padding: 0;
+  margin-top: 35px;
 }
 
 .about-studio-item:last-child b{
+  margin: 0;
+  padding: 0;
+  display: block;
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
+  margin-top: 30px;
+  margin-left: 16px;
+}
+
+.about-studio-item:last-child table {
+  margin: 0;
+  padding: 0;
+  margin-top: 36px;
+  margin-left: -2px;
 }
 
 tr:first-child td {
@@ -275,6 +354,7 @@ tr:first-child td {
   font-size: 45px;
   font-weight: 700;
   line-height: 47px;
+  width: 122px;
 }
 
 tr:first-child td sup{
@@ -289,6 +369,7 @@ tr:last-child td {
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
+  padding-top: 16px;
 }
 
 .portfolio-item {
@@ -304,8 +385,8 @@ tr:last-child td {
 }
 
 .portfolio {
-  border-top: 2px solid #eeeeee;
-  border-bottom: 2px solid #eeeeee;
+  /* border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee; */
 }
 
 /*  */
@@ -781,16 +862,20 @@ body > * > * > * > * > *{
 }
 
 .main-header {
-  margin-bottom: 18px;
+  /* margin-bottom: 18px; */
 }
 
 .main-navigation  {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: flex-end;
+  padding-top: 10px;
+  /* margin-bottom: 35px; */
  }
 
 .main-header-logo {
+  padding-top: 10px;
   width: 160px;
   height: 65px;
 }
@@ -805,21 +890,21 @@ body > * > * > * > * > *{
 
 .site-navigation {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   justify-content: space-between;
-  width: 440px;
-  margin-left: 200px;
+  width: 630px;
+  margin-left: 202px;
 }
 
 .user-navigation {
-  width: 115px;
-  margin-left: 205px;
+  width: 165px;
+  margin-left: 265px;
 }
 
 .container {
-  padding-top: 40px;
+  padding-top: 24px;
   padding-right: 20px;
-  padding-bottom: 0;
+  padding-bottom: 0px;
   padding-left: 20px;
   width: 1160px;
   margin: 0 auto;
@@ -835,6 +920,12 @@ body > * > * > * > * > *{
 .site-title {
 }
 
+.slider {
+  margin: 0;
+  padding: 0;
+  margin-bottom:
+}
+
 .slider-catalog {
   margin: 0;
   padding: 0;
@@ -846,7 +937,8 @@ body > * > * > * > * > *{
   align-items: center;
   margin: 0;
   padding: 0;
-  margin-bottom: 80px;
+  padding-top: 50px;
+  padding-bottom: 80px;
 
   list-style: none;
 }
@@ -865,10 +957,14 @@ body > * > * > * > * > *{
   padding: 0;
 }
 
+.services-catalog-button {
+  margin-top: 40px;
+}
+
 .about-studio {
   margin: 0;
   padding: 0;
-  padding-top: 40px;
+  padding-top: 28px;
   padding-bottom: 54px;
 }
 
@@ -897,8 +993,14 @@ body > * > * > * > * > *{
   align-items: center;
   margin: 0;
   padding: 0;
-  padding: 0 10px;
+  padding-top: 15px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  padding-left: 10px;
   list-style: none;
+
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .portfolio-item {
@@ -1005,12 +1107,38 @@ body > * > * > * > * > *{
   align-items: center; */
   margin: 0;
   padding: 0;
-
+  margin-top: 80px;
+  margin-bottom: 40px;
+  height: 416px;
+  background-color: lightgreen;
   /* padding-top: 55px; */
 }
 
 .contacts-card {
+  height: 308px;
   width: 319px;
+  text-align: center;
+  /* line-height: 308px; */
+  vertical-align: middle;
+  background-color: #ffffff;
+}
+
+.card-wrapper {
+  margin: 0;
+  padding: 0;
+  padding: 50px;
+  /* min-height: 208px; */
+}
+
+.card-wrapper p {
+  margin-top: 32px;
+  margin-bottom: 52px;
+}
+
+.button .modal-writeus {
+  margin-top: 37px;
+  width: 219px;
+  height: 50px;
 }
 
 /* .map {
