@@ -240,15 +240,17 @@
       <h2 class="visually-hidden">Секция контактов</h2>
       <div class="container">
         <div class="contacts-card">
-          <h3>NЁRDS DESIGN STUDIO</h3>
-          <p>191186, Санкт-Петербург,<br>
-            ул. Б. Конюшенная, д. 19/8,<br>
+          <div class="card-wrapper">
+            <h3>NЁRDS DESIGN STUDIO</h3>
+            <p>191186, Санкт-Петербург,<br>
+              ул. Б. Конюшенная, д. 19/8,<br>
 
-            тел. +7 (812) 275-75-75
-          </p>
-          <a class="button modal-writeus" href="contact-form.html" aria-label="Вызвать форму обратной связи">
-            Напишите нам
-          </a>
+              тел. +7 (812) 275-75-75
+            </p>
+            <a class="button modal-writeus" href="contact-form.html" aria-label="Вызвать форму обратной связи">
+              Напишите нам
+            </a>
+          </div>
         </div>
       </div>
       <div class="map">
@@ -256,7 +258,7 @@
       </div>
     </section>
     <footer class="main-footer">
-      <div class="container container-flex">
+      <div class="container">
         <ul class="social-buttons-list">
           <li class="social-button-container">
             <a class="social-button" href="#" aria-label="Нёрдс вконтакте">
@@ -284,34 +286,34 @@
       </div>
     </footer>
     <div class="modal modal-writeus">
-      <div class="container">
-        <h2>Напишите нам</h2>
-        <button class="modal-close" type="button" aria-label="Закрыть форму обратной связи">
-          <img src="img/close-cross.svg" width="21" height="21" alt="">
-        </button>
+        <div class="container">
+          <div class="modal-title-wrapper ">
+            <h2>Напишите нам</h2>
+            <button class="modal-close" type="button" aria-label="Закрыть форму обратной связи">
+              <img src="img/close-cross.svg" width="21" height="21" alt="">
+            </button>
+          </div>
+        </div>
         <form class="writeus-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="writeus-item">
-            <label>
-              Ваше имя:
-              <input type="text" name="name" value="" placeholder="Имя Фамилия">
-            </label>
+            <label for="writeus-name">Ваше имя:</label>
+            <input id="writeus-name" class="writeus-item-input" type="text" name="name" value=""
+              placeholder="Имя Фамилия">
           </p>
           <p class="writeus-item">
-            <label>
-              Ваш e-mail:
-              <input type="text" name="email" value="" placeholder="email@example.com">
-            </label>
+            <label for="writeus-email">Ваш e-mail:</label>
+            <input id="writeus-email" class="writeus-item-input" type="text" name="email" value=""
+              placeholder="email@example.com">
           </p>
           <p class="writeus-item">
-            <label>
-              Текст письма:
-              <input type="text" name="email-text" value="" placeholder="В свободной форме">
-            </label>
+            <label for="writeus-emailtext">Текст письма:</label>
+            <input id="writeus-emailtext" class="writeus-item-input" type="text" name="email-text" value=""
+              placeholder="В свободной форме">
           </p>
-          <button class="button" type="submit">Отправить</button>
+          <button class="button writeus-button" type="submit"><span>Отправить</span></button>
         </form>
       </div>
-    </div>
+
   </main>
 </body>
 

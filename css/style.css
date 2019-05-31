@@ -167,6 +167,11 @@ header,
 }
 
 .site-title h1 {
+  margin: 0;
+  padding: 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
@@ -735,6 +740,7 @@ fieldset {
 .pagination-list .pagination-item-current{
   outline: 3px solid #dbdbdb;
   outline-offset: -3px;
+  background-color: #ffffff;
 }
 
 .pagination-item:last-child {
@@ -806,9 +812,140 @@ fieldset {
 /* Раздел модального окна */
 
 .modal {
-  display: none;
+  /* display: none; */
+  margin: 0;
+  padding: 0;
+
+  width: 960px;
+  height: 590px;
+  background-color: #ffffff;
+  /* background-color: #00aa62; */
+  box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
 }
 
+.modal-title-wrapper {
+  margin: 0;
+  padding: 0;
+  margin-top: 73px;
+  margin-left: 77px;
+  margin-right: 90px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.modal h2 {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  color: #000000;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+.modal-close {
+  margin: 0;
+  padding: 0;
+  opacity: 0.3;
+  margin-left: 436px;
+  width: 21px;
+  height: 21px;
+  border: none;
+  background-color: transparent;
+}
+
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-close:focus {
+  opacity: 0.1;
+}
+
+.writeus-form {
+  margin: 0;
+  padding: 0;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.writeus-item {
+  margin: 0;
+  margin-bottom: 36px;
+  width: 360px;
+}
+
+.writeus-item label {
+  display: block;
+  margin-left: 0;
+  margin-bottom: 5px;
+  color: #000000;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.writeus-item:nth-child(3) {
+  width: 760px;
+  margin-bottom: 47px;
+}
+
+.writeus-item-input {
+  border: 2px solid #d7dcde;
+  width: 360px;
+  height: 50px;
+  border-radius: 3px;
+}
+
+.writeus-item:nth-child(3) .writeus-item-input {
+  width: 760px;
+  height: 118px;
+}
+
+.writeus-item-input::placeholder {
+  opacity: 0.5;
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  /* line-height: 18px;
+  padding-top: 18px; */
+  padding-left: 15px;
+}
+
+.writeus-item:nth-child(3) .writeus-item-input::placeholder {
+  /* padding-top: 18px; */
+  padding-left: 15px;
+  line-height: 18px;
+}
+
+.writeus-button {
+  width: 260px;
+  height: 50px;
+  background-color: #fb565a;
+  border: none;
+}
+
+.writeus-button:hover {
+  background-color: #e74246;
+}
+
+.writeus-button:focus {
+  background-color: #d7373b;
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+}
+
+.writeus-button:focus span {
+  opacity: 0.3;
+}
 /* Сеточные стили */
 
 /* html,
@@ -923,7 +1060,7 @@ body > * > * > * > * > *{
 .slider {
   margin: 0;
   padding: 0;
-  margin-bottom:
+  margin-bottom: 0;
 }
 
 .slider-catalog {
@@ -1114,6 +1251,11 @@ body > * > * > * > * > *{
   /* padding-top: 55px; */
 }
 
+/* .catalog-page .contacts {
+  margin-top: 0px;
+  margin-bottom: 0px;
+} */
+
 .contacts-card {
   height: 308px;
   width: 319px;
@@ -1154,6 +1296,10 @@ body > * > * > * > * > *{
   margin-bottom: 0;
 }
 
+.main-footer .container {
+  display: flex;
+}
+
 .social-buttons-list {
   display: flex;
   justify-content: space-between;
@@ -1168,5 +1314,5 @@ body > * > * > * > * > *{
 
 .footer-text {
   width: 545px;
-  /* margin-left: 139px; */
+  margin-left: 139px;
 }

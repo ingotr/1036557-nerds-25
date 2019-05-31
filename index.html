@@ -56,9 +56,9 @@
           <div>
             <p class="slider-title">Любим математику
               как никто другой.</p>
-            <p class="slide-description>Никакого креатива, только математические формулы
+            <p class="slide-description">Никакого креатива, только математические формулы
               для расчета идеальных пропорций.</p>
-            <a class=" button" href="#">Узнать больше</a>
+            <a class="button" href="#">Узнать больше</a>
           </div>
           <div>
             <img src="img/slides-2.png" width="698" height="413" alt="Слайд">
@@ -68,7 +68,7 @@
           <div>
             <p class="slider-title">Только ночь,
               только хардкор</p>
-            <p class="slide-description>Работать днем, как все? Мы против этого.
+            <p class="slide-description">Работать днем, как все? Мы против этого.
               Ближе к полуночи работа только начинается.</p>
             <a class=" button" href="#">Узнать больше</a>
           </div>
@@ -202,7 +202,7 @@
       </div>
     </section>
     <footer class="main-footer">
-      <div class="container container-flex">
+      <div class="container">
         <ul class="social-buttons-list">
           <li class="social-button-container">
             <a class="social-button" href="#" aria-label="Нёрдс вконтакте">
@@ -232,33 +232,33 @@
 
     <div class="modal modal-writeus">
       <div class="container">
-        <h2>Напишите нам</h2>
-        <button class="modal-close" type="button" aria-label="Закрыть форму обратной связи">
-          <img src="img/close-cross.svg" width="21" height="21" alt="">
-        </button>
-        <form class="writeus-form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="writeus-item">
-            <label>
-              Ваше имя:
-              <input type="text" name="name" value="" placeholder="Имя Фамилия">
-            </label>
-          </p>
-          <p>
-            <label>
-              Ваш e-mail:
-              <input type="text" name="email" value="" placeholder="email@example.com">
-            </label>
-          </p>
-          <p>
-            <label>
-              Текст письма:
-              <input type="text" name="email-text" value="" placeholder="В свободной форме">
-            </label>
-          </p>
-          <button class="button" type="submit">Отправить</button>
-        </form>
+        <div class="modal-title-wrapper ">
+          <h2>Напишите нам</h2>
+          <button class="modal-close" type="button" aria-label="Закрыть форму обратной связи">
+            <img src="img/close-cross.svg" width="21" height="21" alt="">
+          </button>
+        </div>
       </div>
+      <form class="writeus-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="writeus-item">
+          <label for="writeus-name">Ваше имя:</label>
+          <input id="writeus-name" class="writeus-item-input" type="text" name="name" value=""
+            placeholder="Имя Фамилия">
+        </p>
+        <p class="writeus-item">
+          <label for="writeus-email">Ваш e-mail:</label>
+          <input id="writeus-email" class="writeus-item-input" type="text" name="email" value=""
+            placeholder="email@example.com">
+        </p>
+        <p class="writeus-item">
+          <label for="writeus-emailtext">Текст письма:</label>
+          <input id="writeus-emailtext" class="writeus-item-input" type="text" name="email-text" value=""
+            placeholder="В свободной форме">
+        </p>
+        <button class="button writeus-button" type="submit"><span>Отправить</span></button>
+      </form>
     </div>
+
   </main>
 </body>
 
