@@ -75,6 +75,7 @@ header,
 .user-navigation a::before {
   content: url("../img/cart-icon.svg");
   margin-right: 20px;
+  opacity: 0.3;
 }
 
 .main-header-logo:hover {
@@ -186,6 +187,10 @@ header,
   border-bottom: 2px solid #eeeeee;
 }
 
+.services-catalog-item .services-catalog-description {
+  margin-bottom: 40px;
+}
+
 .services-catalog-item h2 {
   padding: 0;
   margin: 0;
@@ -281,6 +286,10 @@ header,
 
 /*  */
 /* Раздел о студии */
+
+.about-studio {
+
+}
 
 .about-studio b {
   margin-top: 34px;
@@ -378,14 +387,14 @@ tr:last-child td {
 }
 
 .portfolio-item {
-  opacity: 0.2;
+  opacity: 0.3;
 }
 
 .portfolio-item:hover {
   opacity: 1;
 }
 
-.portfolio-item:focus {
+.portfolio-item:active {
   opacity: 0.1;
 }
 
@@ -600,19 +609,42 @@ fieldset {
   opacity: 1;
 }
 
+.sorting-button-descending span{
+  position: absolute;
+  top: 7px;
+  left: -15px;
+
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 10px solid #231f20;
+}
+
+.sorting-button-ascending span{
+  position: absolute;
+  top: 7px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 10px solid #231f20;
+}
+
 .sorting-button-descending,
 .sorting-button-ascending {
+  position: relative;
   opacity: 0.2;
 }
 
 .sorting-button-descending:hover,
 .sorting-button-ascending:hover {
-  background-color: #a6a6a6;
+  opacity: 0.4;
 }
 
 .sorting-button-descending:focus,
 .sorting-button-ascending:focus {
-  background-color: #000000;
+  opacity: 1;
 }
 
 /*  */
@@ -735,12 +767,25 @@ fieldset {
   color: #000000;
 
   background-color: #eeeeee;
+  border-radius: 3px;
 }
 
 .pagination-list .pagination-item-current{
-  outline: 3px solid #dbdbdb;
+  /* outline: 3px solid #dbdbdb; */
   outline-offset: -3px;
   background-color: #ffffff;
+  box-shadow: inset 0 0 0 3px #dbdbdb;
+}
+
+.pagination-item a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #000000;
+}
+
+.pagination-item:active a {
+  opacity: 0.3;
 }
 
 .pagination-item:last-child {
@@ -751,8 +796,9 @@ fieldset {
   background-color: #dfdfdf;
 }
 
-.pagination-item:focus {
+.pagination-item:active {
   background-color: #d5d5d5;
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 /*  */
@@ -800,7 +846,7 @@ fieldset {
   background-color: #e74246;
 }
 
-.social-button-container:focus{
+.social-button-container:active{
   background-color: #d7373b;
 }
 
@@ -855,6 +901,7 @@ fieldset {
   height: 21px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .modal-close:hover {
@@ -1039,10 +1086,6 @@ body > * > * > * > * > *{
 }
 
 .container {
-  padding-top: 24px;
-  padding-right: 20px;
-  padding-bottom: 0px;
-  padding-left: 20px;
   width: 1160px;
   margin: 0 auto;
 
@@ -1080,13 +1123,13 @@ body > * > * > * > * > *{
   list-style: none;
 }
 
-.services-catalog-item:first-child {
+.services-catalog-item:last-child {
   margin: 0;
 }
 
 .services-catalog-item {
   width: 300px;
-  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .services-catalog-item figure {
@@ -1094,8 +1137,7 @@ body > * > * > * > * > *{
   padding: 0;
 }
 
-.services-catalog-button {
-  margin-top: 40px;
+.services-catalog-item a {
 }
 
 .about-studio {
@@ -1103,6 +1145,8 @@ body > * > * > * > * > *{
   padding: 0;
   padding-top: 28px;
   padding-bottom: 54px;
+  padding-right: 20px;
+  padding-bottom: 0px;
 }
 
 /* .about-wrapper {
@@ -1246,6 +1290,7 @@ body > * > * > * > * > *{
   padding: 0;
   margin-top: 80px;
   margin-bottom: 40px;
+
   height: 416px;
   background-color: lightgreen;
   /* padding-top: 55px; */
