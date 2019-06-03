@@ -47,7 +47,6 @@ header,
   text-transform: uppercase;
 }
 
-
 .inner-page .main-header {
   margin: 0;
 }
@@ -82,12 +81,12 @@ header,
   margin-left: 202px;
 }
 
-.site-navigation a {
+/* .site-navigation a {
   margin: 0;
   padding: 0;
   padding-top: 12px;
   padding-bottom: 12px;
-}
+} */
 
 .user-navigation {
   width: 165px;
@@ -96,6 +95,11 @@ header,
 
 .site-navigation a,
 .user-navigation a {
+  margin: 0;
+  padding: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
   color: #000000;
 }
 
@@ -111,9 +115,13 @@ header,
   opacity: 0.3;
 }
 
-.site-navigation a:focus {
-  color: #000000;
+/* .site-navigation a:active,
+.user-navigation a:active {
 
+} */
+
+.site-navigation .site-navigation-current,
+.user-navigation .site-navigation-current {
   border-bottom: 2px solid #fb565a;
 }
 
@@ -193,7 +201,12 @@ header,
   width: 1160px;
 }
 
-.slide .button {
+.slide .button-text {
+  padding-right: 55px;
+  padding-left: 53px;
+}
+
+/* .slide .button {
   margin: 0;
   padding-right: 55px;
   padding-left: 55px;
@@ -209,7 +222,7 @@ header,
 
 .slide .button:focus {
   background-color: #d7373b;
-  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1); */
 }
 
 .slide-image {
@@ -277,13 +290,15 @@ header,
   margin-right: 100px;
 }
 
-.services-catalog-item:active a {
-  opacity: 0.3;
+.services-catalog-item .button{
+  width: 160px;
+  height: 50px;
 }
 
-/* .services-catalog-item:active a {
-  opacity: 0.3;
-} */
+.services-catalog-item .button-text{
+  padding-right: 39px;
+  padding-left: 39px;
+}
 
 .services-catalog-item figure {
   margin: 0;
@@ -308,7 +323,8 @@ header,
   width: 216px;
 }
 
-.button {
+/* Старый класс кнопки */
+/* .button {
   margin: 0;
 
   padding: 0;
@@ -332,7 +348,54 @@ header,
   color: #ffffff;
 
   text-transform: uppercase;
+} */
+
+/*  */
+/* Раздел универсальных кнопок */
+
+.button {
+  margin: 0;
+  padding: 0;
+  width: 240px;
+  min-height: 50px;
+  background-color: #fb565a;
+  border-radius: 3px;
 }
+
+.button:hover {
+  background-color: #e74246;
+}
+
+.button:active {
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  background-color: #d7373b;
+}
+
+.button-text {
+  padding-top: 19px;
+  padding-right: 5px;
+  padding-bottom: 18px;
+  padding-left: 5px;
+
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  /* line-height: 18px; */
+
+  text-align: center;
+  line-height: 50px;
+  vertical-align: middle;
+  color: #ffffff;
+
+  text-transform: uppercase;
+}
+
+.button:active .button-text{
+  opacity: 0.3;
+}
+
+/*  */
+/*  */
 
 /* .button:focus {
   opacity: 0.3;
@@ -1235,7 +1298,7 @@ tr:last-child td {
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
-.social-button:focus {
+.social-button-container:active .social-button-icon{
   opacity: 0.3;
 }
 
@@ -1364,21 +1427,21 @@ tr:last-child td {
 }
 
 .writeus-button {
-  width: 260px;
+  /* width: 260px;
   height: 50px;
 
-  background-color: #fb565a;
+  background-color: #fb565a; */
   border: none;
 }
 
-.writeus-button:hover {
+/* .writeus-button:hover {
   background-color: #e74246;
 }
 
 .writeus-button:focus {
   background-color: #d7373b;
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
-}
+} */
 
 .writeus-button:focus span {
   opacity: 0.3;
