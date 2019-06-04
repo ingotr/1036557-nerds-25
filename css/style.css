@@ -1294,6 +1294,10 @@ tr:last-child td {
 }
 
 .catalog-item-description a {
+  display: block;
+
+  margin-top: 10px;
+
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
@@ -1315,6 +1319,7 @@ tr:last-child td {
 .buy-button {
   width: 200px;
   height: 50px;
+  margin-bottom: 20px;
 
   background-color: #fb565a;
   border: none;
