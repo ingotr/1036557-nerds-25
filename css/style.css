@@ -15,6 +15,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /*  */
 /* Visually hidden */
 
@@ -250,7 +255,10 @@ header,
 .slider-item {
   display: none;
   width: 1160px;
-  padding: 78px 0 80px 0;
+  padding-top: 78px;
+  padding-right: 0;
+  padding-bottom: 25px;
+  padding-left: 0;
 }
 
 .slider-item:nth-child(1) {
@@ -897,6 +905,8 @@ tr:last-child td {
 }
 
 .filters-form legend {
+  margin-bottom: 20px;
+
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -979,6 +989,11 @@ tr:last-child td {
   font-weight: 400;
   line-height: 22px;
   color: #283136;
+}
+
+.filters-grids ul,
+.filters-features ul {
+ margin-left: 5px;
 }
 
 .filters-price input {
@@ -1393,7 +1408,7 @@ tr:last-child td {
   margin-top: 69px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 0;
+  margin-bottom: 69px;
 }
 
 .main-footer .container {
@@ -1471,7 +1486,7 @@ tr:last-child td {
   position: fixed;
   top: 120px;
   left: 25%;
-  /* display: none; */
+  display: none;
   margin: 0;
   padding: 0;
   width: 960px;
