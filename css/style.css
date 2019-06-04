@@ -81,13 +81,6 @@ header,
   margin-left: 202px;
 }
 
-/* .site-navigation a {
-  margin: 0;
-  padding: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
-} */
-
 .user-navigation {
   width: 165px;
   margin-left: 265px;
@@ -1475,11 +1468,14 @@ tr:last-child td {
 /* Раздел модального окна */
 
 .modal {
+  position: fixed;
+  top: 120px;
+  left: 25%;
   /* display: none; */
   margin: 0;
   padding: 0;
   width: 960px;
-  height: 590px;
+  height: 661px;
 
   background-color: #ffffff;
   /* background-color: #00aa62; */
@@ -1492,9 +1488,9 @@ tr:last-child td {
   align-items: center;
   margin: 0;
   padding: 0;
-  margin-top: 73px;
-  margin-left: 77px;
-  margin-right: 90px;
+  padding-top: 73px;
+  padding-left: 100px;
+  padding-right: 90px;
 }
 
 .modal h2 {
@@ -1566,23 +1562,34 @@ tr:last-child td {
 .writeus-item-input {
   width: 360px;
   height: 50px;
+  padding-left: 15px;
+
 
   border-radius: 3px;
   border: 2px solid #d7dcde;
 }
 
+.writeus-item-input:hover {
+  border: 2px solid #b4b9bb;
+}
+
+.writeus-item-input:focus {
+  border: 2px solid #000000;
+}
+
+.writeus-item-input:invalid {
+  border: 2px solid #e74246;
+}
+
 .writeus-item:nth-child(3) .writeus-item-input {
   width: 760px;
   height: 118px;
+  padding-top: 14px;
 }
 
 .writeus-item-input::placeholder {
-  padding-left: 15px;
-
   font-size: 16px;
   font-weight: 400;
-  /* line-height: 18px;
-  padding-top: 18px; */
   color: #444444;
 
   opacity: 0.5;
@@ -1596,21 +1603,9 @@ tr:last-child td {
 }
 
 .writeus-button {
-  /* width: 260px;
   height: 50px;
-
-  background-color: #fb565a; */
   border: none;
 }
-
-/* .writeus-button:hover {
-  background-color: #e74246;
-}
-
-.writeus-button:focus {
-  background-color: #d7373b;
-  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
-} */
 
 .writeus-button:focus span {
   opacity: 0.3;
