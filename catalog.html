@@ -38,19 +38,27 @@
       <div class="container container-flex">
         <div class="filters">
           <h2 class="visually-hidden">Фильтр макетов</h2>
-          <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
+          <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset>
               <legend>Стоимость:</legend>
               <div class="filters-price">
-                <img src="img/price-slider.png" width="261" height="81" alt="">
-                <label>
-                  ОТ
-                  <input type=text name="price-low" value="0">
-                </label>
-                <label>
-                  ДО
-                  <input type=text name="price-high" value="15 000">
-                </label>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="price-low">
+                    ОТ
+                    <input type=text name="price-low" value="0">
+                  </label>
+                  <label class="price-high">
+                    ДО
+                    <input type=text name="price-high" value="15 000">
+                  </label>
+                </div>
               </div>
             </fieldset>
             <fieldset>

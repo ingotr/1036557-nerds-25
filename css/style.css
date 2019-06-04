@@ -838,6 +838,9 @@ tr:last-child td {
 }
 
 .filters fieldset {
+  margin: 0;
+  padding: 0;
+
   border: none;
 }
 
@@ -903,16 +906,82 @@ tr:last-child td {
 .filters-form legend {
   font-size: 18px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 24px;
   color: #000000;
 
   text-transform: uppercase;
   letter-spacing: 0.05px;
 }
 
+.filters-price {
+  width: 260px;
+  margin-top: 49px;
+}
+
+.range-controls {
+  position: relative;
+
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  background-color: #f1f1f1;
+
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+}
+
 .filters-price label,
 .filters-grids label,
 .filters-features label {
+
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
@@ -920,14 +989,21 @@ tr:last-child td {
 }
 
 .filters-price input {
-  width: 80px;
-  height: 38px;
+  width: 60px;
+  padding: 8px 10px;
+  margin-left: 10px;
   margin-bottom: 50px;
 
+  font-family: Roboto, Arial, sans-serif;
   text-align: center;
 
-  background-color: #eeeeee;
   border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.price-high {
+  text-align: right;
 }
 
 .filters-grids label,
