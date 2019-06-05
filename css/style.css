@@ -721,55 +721,80 @@ tr:last-child td {
 /* Раздел контактов */
 
 .contacts {
-  /* display: flex;
-  justify-content: flex-end;
-  align-items: center; */
   margin: 0;
   padding: 0;
   margin-top: 80px;
   margin-bottom: 40px;
+  padding-top: 54px;
+  /* margin-right: auto;
+  margin-left: auto; */
   height: 416px;
+  width: 100%;
 
-  background-color: lightgreen;
-  /* padding-top: 55px; */
 }
 
-/* .catalog-page .contacts {
-  margin-top: 0px;
-  margin-bottom: 0px;
-} */
+.contacts .container {
+  width: 1440px;
+}
 
 .contacts-card {
   height: 308px;
   width: 319px;
 
   text-align: center;
-  /* line-height: 308px; */
   vertical-align: middle;
 
   background-color: #ffffff;
 }
 
-.card-wrapper {
+.map {
+
   margin: 0;
   padding: 0;
-  padding: 50px;
-  /* min-height: 208px; */
+  padding-top: 54px;
+  height: 416px;
+  width: 1440px;
+
+  background-image: url("../img/map-marker.png") ,url("../img/map.png");
+  background-position: 822px 85px ,center 0;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.card-wrapper {
+  margin: 0;
+  margin-left: 140px;
+  margin-right: 975px;
+  padding: 0;
+  padding-top: 30px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+
+  background-color: #ffffff;
+}
+
+.card-wrapper h3 {
+  text-align: left;
 }
 
 .card-wrapper p {
   margin-top: 32px;
-  margin-bottom: 52px;
+  margin-bottom: 32px;
+
+  text-align: left;
 }
 
-.button .modal-writeus {
+.card-wrapper .modal-writeus {
+  padding: 0;
   margin-top: 37px;
   width: 219px;
   height: 50px;
+
+  line-height: 50px;
 }
 
-/* Начни стилизовать все кнопки по */
-/* образцу этого элемента */
+/* Общая стилизация кнопок */
+/*  */
 .contact-button {
   margin: 0;
   padding: 0;
