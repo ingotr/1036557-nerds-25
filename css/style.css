@@ -1456,6 +1456,10 @@ tr:last-child td {
   box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
 }
 
+.modal-show {
+  display: block;
+}
+
 .modal-title-wrapper {
   display: flex;
   flex-direction: row;
