@@ -81,7 +81,6 @@ header,
 
 .site-navigation {
   display: flex;
-  /* flex-direction: row; */
   justify-content: space-between;
   width: 630px;
   margin-left: 202px;
@@ -114,11 +113,6 @@ header,
   opacity: 0.3;
 }
 
-/* .site-navigation a:active,
-.user-navigation a:active {
-
-} */
-
 .site-navigation .site-navigation-current,
 .user-navigation .site-navigation-current {
   border-bottom: 2px solid #fb565a;
@@ -136,8 +130,6 @@ header,
 .container {
   width: 1160px;
   margin: 0 auto;
-
-  /* background-color: rgba(33, 33, 173, 0.397); */
 }
 
 .container-flex {
@@ -288,26 +280,6 @@ header,
   background-position: 100% 20px;
 }
 
-
-/* .slide .button {
-  margin: 0;
-  padding-right: 55px;
-  padding-left: 55px;
-  width: 240px;
-  height: 50px;
-
-  background-color: #fb565a;
-}
-
-.slide .button:hover {
-  background-color: #e74246;
-}
-
-.slide .button:focus {
-  background-color: #d7373b;
-  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1); */
-
-
 .slide-image {
   margin: 0;
   padding: 0;
@@ -347,7 +319,6 @@ header,
   align-items: center;
   margin: 0;
   padding: 0;
-  /* padding-top: 50px; */
   padding-bottom: 80px;
 
   border-bottom: 2px solid #eeeeee;
@@ -419,32 +390,6 @@ header,
   width: 216px;
 }
 
-/* Старый класс кнопки */
-/* .button {
-  margin: 0;
-
-  padding: 0;
-  padding-top: 15px;
-  padding-right: 40px;
-  padding-bottom: 15px;
-  padding-left: 41px;
-
-  line-height: 50px;
-  vertical-align: middle;
-
-  border-radius: 3px;
-
-  width: 160px;
-  min-height: 50px;
-
-  font: inherit;
-
-  text-align: center;
-  vertical-align: middle;
-  color: #ffffff;
-
-  text-transform: uppercase;
-} */
 
 /*  */
 /* Раздел универсальных кнопок */
@@ -478,35 +423,9 @@ header,
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
-/* .button-text {
-  padding-top: 19px;
-  padding-right: 5px;
-  padding-bottom: 18px;
-  padding-left: 5px;
-
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 500;
-
-
-  text-align: center;
-  line-height: 50px;
-  vertical-align: middle;
-  color: #ffffff;
-
-  text-transform: uppercase;
-}
-
-.button:active .button-text{
-  opacity: 0.3;
-} */
-
 /*  */
 /*  */
 
-/* .button:focus {
-  opacity: 0.3;
-} */
 
 .services-catalog-item:first-child .button {
   background-color: #fb565a;
@@ -515,11 +434,6 @@ header,
 .services-catalog-item:first-child .button:hover {
   background-color: #e74246;
 }
-
-/* .services-catalog-item:first-child:active {
-  background-color: #d7373b;
-  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
-} */
 
 .services-catalog-item:first-child .button:active {
   background-color: #d7373b;
@@ -682,7 +596,7 @@ tr:last-child td {
 /* Раздел портфолио */
 
 .portfolio  {
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .portfolio-list {
@@ -723,11 +637,8 @@ tr:last-child td {
 .contacts {
   margin: 0;
   padding: 0;
-  margin-top: 80px;
   margin-bottom: 40px;
   padding-top: 54px;
-  /* margin-right: auto;
-  margin-left: auto; */
   height: 416px;
   width: 100%;
 
@@ -1263,12 +1174,8 @@ tr:last-child td {
   margin: 0;
   padding: 0;
   margin-top: 60px;
-  margin-bottom: 60px;
-
+  margin-bottom: 10px;
   width: 760px;
-  /* display: flex;
-  justify-content: flex-start;
-  align-items: flex-start; */
 }
 
 .catalog-list {
@@ -1318,7 +1225,6 @@ tr:last-child td {
 
 .catalog-item:hover {
   border-top-color: #4d4d4d;
-  /* box-shadow: 0 1px 5px #000000; */
   box-shadow: 0 6px 15px rgba(0, 1, 1, 0.25);
 }
 
@@ -1431,7 +1337,6 @@ tr:last-child td {
 }
 
 .pagination-list .pagination-item-current{
-  /* outline: 3px solid #dbdbdb; */
   outline-offset: -3px;
   background-color: #ffffff;
   box-shadow: inset 0 0 0 3px #dbdbdb;
@@ -1501,10 +1406,6 @@ tr:last-child td {
   color: #444444;
 }
 
-/* .main-footer .social-button {
-  background-color: #e1e1e1;
-} */
-
 .social-buttons-list {
   display: flex;
   justify-content: space-between;
@@ -1556,7 +1457,6 @@ tr:last-child td {
   height: 661px;
 
   background-color: #ffffff;
-  /* background-color: #00aa62; */
   box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
 }
 
@@ -1674,7 +1574,6 @@ tr:last-child td {
 }
 
 .writeus-item:nth-child(3) .writeus-item-input::placeholder {
-  /* padding-top: 18px; */
   padding-left: 15px;
 
   line-height: 18px;
@@ -1688,57 +1587,4 @@ tr:last-child td {
 .writeus-button:focus span {
   opacity: 0.3;
 }
-/* Сеточные стили */
-
-/* html,
-body {
-  min-width: 1440px;
-  min-height: 2476px;
-  /* min-width: 1440px;
-  min-height: 3213px; */
-/* }  */
-
-/* .inner-page { */
-  /* Временно для сетки */
-  /* background-image: url("../img/bg-catalog.png");
-  background-size: 5669 1440px;
-  background-position: top center;
-  background-repeat: no-repeat; */
-/* } */
-
-/* Временный аутлайн */
-
-/* body > * {
-  background: rgba(255, 55, 0, 0.3);
-  outline: green solid 2px;
-  opacity: 0.5;
-}
-
-body > * > *{
-  background: rgba(255, 169, 10, 0.305);
-  outline: blue solid 2px;
-}
-
-body > * > * > *{
-  background: rgba(0, 0, 255, 0.3);
-  outline: goldenrod solid 2px;
-}
-
-body > * > * > * > *{
-  background: rgba(13, 192, 82, 0.5);
-  outline: red solid 2px;
-}
-
-body > * > * > * > * > *{
-  background: rgba(9, 131, 245, 0.774);
-  outline: tomato solid 2px;
-} */
-
-/* Временный аутлайн */
-
-/* .map {
-  width: 1440px;
-
-  min-height: 416px;
-} */
 
