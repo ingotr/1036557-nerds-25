@@ -660,18 +660,28 @@ tr:last-child td {
 }
 
 .map {
+  position: relative;
+
   width: 1440px;
   height: 416px;
   margin: 0;
   padding: 0;
-  padding-top: 54px;
+  /* padding-top: 54px; */
 
   background-image: url("../img/map-marker.png") ,url("../img/map.png");
   background-position: 822px 85px ,center 0;
   background-repeat: no-repeat, no-repeat;
 }
 
+.map iframe {
+  border: none;
+}
+
 .card-wrapper {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+
   margin: 0;
   margin-left: 140px;
   margin-right: 975px;
