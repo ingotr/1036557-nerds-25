@@ -33,12 +33,15 @@ modalWrite.addEventListener("click", function (evt) {
 close.addEventListener("click", function (evt) {
   evt.preventDefault();
   modal.classList.remove("modal-show");
+  modal.classList.remove("modal-error");
 });
 
 form.addEventListener("submit", function (evt) {
   if (!modalName.value || !email.value || !emailText.value) {
     evt.preventDefault();
-    console.log("Нужно ввести имя, адрес почты и текст сообщения");
+    modal.classList.remove("modal-error");
+    modal.offsetWidth = popup.offsetWidth;
+    modal.classList.add("modal-error");
   } else {
     if (isStorageSupport) {
       localStorage.setItem("modalName", modalName.value);
@@ -52,6 +55,7 @@ window.addEventListener("keydown", function (evt) {
     evt.preventDefault();
     if (modal.classList.contains("modal-show")) {
       modal.classList.remove("modal-show");
+      modal.classList.remove("modal-error");
     }
   }
 });
