@@ -227,6 +227,7 @@ header,
   border-radius: 50%;
 }
 
+
 .dot:hover::after {
   background-color: #717171;
   opacity: 0.5;

@@ -9,6 +9,8 @@ var emailText = modal.querySelector("[name=email-text]");
 
 var isStorageSupport = true;
 
+var slideIndex = 1;
+
 try {
   storage = localStorage.getItem("name");
 } catch (err) {
@@ -60,23 +62,18 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-var slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+// Раздел работы слайдера
+showSlides(slideIndex);
 
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-  var i;
+  var i = 0;
   var slides = document.querySelectorAll(".slider-item");
   var dots = document.querySelectorAll(".dot");
-
-  console.log(slides);
 
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
@@ -84,8 +81,9 @@ function showSlides(n) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].classname = dots[i].className.replace(" active","");
+    dots[i].className = dots[i].className.replace(" active", "");
   }
+
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
