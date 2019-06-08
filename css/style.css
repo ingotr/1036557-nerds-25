@@ -141,6 +141,20 @@ header,
 /*  */
 /* Раздел слайдера */
 
+@keyframes fade {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
 .slider-catalog {
   margin: 0;
   padding: 0;
@@ -168,7 +182,7 @@ header,
   transform: translateX(-50%);
 }
 
-.slider-indicators i {
+.slider-indicators span {
   position: relative;
 
   display: inline-block;
@@ -180,7 +194,7 @@ header,
   cursor: pointer;
 }
 
-.slider-indicators i::after {
+.slider-indicators span::after {
   content: "";
 
   position: absolute;
@@ -211,6 +225,11 @@ header,
   background-color: inherit;
   border: 2px solid #c1c1c1;
   border-radius: 50%;
+}
+
+.dot:hover::after {
+  background-color: #717171;
+  opacity: 0.5;
 }
 
 .slider-item h3 {
