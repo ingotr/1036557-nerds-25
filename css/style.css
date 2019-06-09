@@ -519,6 +519,7 @@ header,
 
   font-size: 45px;
   font-weight: 500;
+  font-kerning: none;
   line-height: 45px;
 }
 
@@ -528,6 +529,7 @@ header,
   padding: 0;
 
   font-size: 16px;
+  font-kerning: none;
   line-height: 24px;
 
   text-transform: uppercase;
@@ -569,7 +571,7 @@ header,
 
 .about-studio-item:first-child p{
   margin: 0;
-  margin-top: 35px;
+  margin-top: 34px;
   padding: 0;
 }
 
@@ -729,7 +731,7 @@ tr:last-child td {
   margin-left: 140px;
   margin-right: 975px;
   padding: 0;
-  padding-top: 30px;
+  padding-top: 32px;
   padding-right: 50px;
   padding-bottom: 50px;
   padding-left: 50px;
@@ -738,14 +740,28 @@ tr:last-child td {
 }
 
 .card-wrapper h3 {
+  width: 193px;
+  margin-bottom: 24px;
+  /* color: #000000; */
+/* font-family: Roboto; */
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
   text-align: left;
 }
 
 .card-wrapper p {
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  /* width: 200px;
+  height: 71px; */
 
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
   text-align: left;
+  color: #666666;
 }
 
 .card-wrapper .modal-writeus {
@@ -1451,7 +1467,7 @@ tr:last-child td {
 }
 
 .footer-text {
-  width: 545px;
+  width: 547px;
   margin-top: 5px;
   margin-left: 139px;
 }
@@ -1463,6 +1479,7 @@ tr:last-child td {
 .main-footer b {
   font-size: 36px;
   font-weight: 700;
+  font-kerning: none;
   line-height: 36px;
   color: #000000;
 }
