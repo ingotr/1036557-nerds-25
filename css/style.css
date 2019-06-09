@@ -101,6 +101,12 @@ header,
   color: #000000;
 }
 
+.user-navigation a {
+  position: relative;
+
+  padding-left: 40px;
+}
+
 .site-navigation a:hover,
 .user-navigation a:hover {
   color: #fb565a;
@@ -119,6 +125,10 @@ header,
 }
 
 .user-navigation a::before {
+  position: absolute;
+  top: 6px;
+  left: -2px;
+
   content: url("../img/cart-icon.svg");
 
   margin-right: 20px;
