@@ -18,13 +18,13 @@
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии дизайна Нёрдс">
         </a>
         <ul class="site-navigation">
-          <li><a href="studio.html">Студия</a></li>
-          <li><a href="clients.html">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="studio.html" aria-label="Перейти на страницу Студии">Студия</a></li>
+          <li><a href="clients.html" aria-label="Перейти на страницу Клиентов">Клиенты</a></li>
+          <li><a href="catalog.html" aria-label="Перейти на страницу Магазина">Магазин</a></li>
+          <li><a href="contacts.html" aria-label="Перейти на страницу Контактов">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
-          <li><a href="basket.html">Корзина</a></li>
+          <li><a href="basket.html"  aria-label="Перейти в Корзину">Корзина</a></li>
         </ul>
       </nav>
     </div>
@@ -32,23 +32,18 @@
   <section class="slider">
     <div class="container">
       <h2 class="visually-hidden">Секция слайдера</h2>
-      <div class="slider-indicators">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-      </div>
       <ul class="slider-catalog">
         <li class="slider-item">
           <h3>Долго, дорого,<br> скрупулезно.</h3>
           <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-          <a class="button" href="#">Узнать больше</a>
+          <a class="button" href="#" aria-label="Узнать больше о первом преимуществе">Узнать больше</a>
         </li>
         <!-- <li class="slider-item container-flex"> -->
         <li class="slider-item">
           <div>
             <h3>Любим математику как никто другой</h3>
             <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-            <a class="button" href="#">Узнать больше</a>
+            <a class="button" href="#" aria-label="Узнать больше о втором преимуществе">Узнать больше</a>
           </div>
         </li>
         <!-- <li class="slider-item container-flex"> -->
@@ -56,10 +51,15 @@
           <div>
             <h3>Только ночь,<br> только хардкор</h3>
             <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
-            <a class="button" href="#">Узнать больше</a>
+            <a class="button" href="#" aria-label="Узнать больше о третьем преимуществе">Узнать больше</a>
           </div>
         </li>
       </ul>
+      <div class="slider-indicators">
+        <span class="dot" onclick="currentSlide(1)" tabindex="0" aria-label="Перейти к первому слайду"></span>
+        <span class="dot" onclick="currentSlide(2)" tabindex="0" aria-label="Перейти ко второму слайду"></span>
+        <span class="dot" onclick="currentSlide(3)" tabindex="0" aria-label="Перейти к третьему слайду"></span>
+      </div>
     </div>
   </section>
   <main>
@@ -133,23 +133,23 @@
       <div class="container">
         <ul class="portfolio-list">
           <li class="portfolio-item">
-            <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <a href="https://htmlacademy.ru/intensive/htmlcss"  aria-label="Перейти на страницу Html Academy">
               <img src='img/html-academy-logo.svg' width="199" height="68" alt="Логотип Html Academy">
             </a>
           </li>
           <li class="portfolio-item">
-            <a href="#">
+            <a href="#"  aria-label="Перейти на страницу Барбершопа Бородинский">
               <img src='img/barbershop-borodinsky-logo.svg' width="209" height="90"
                 alt="Логотип Барбершопа Бородинский">
             </a>
           </li>
           <li class="portfolio-item">
-            <a href="#">
+            <a href="#"  aria-label="Перейти на страницу фирмы Pink">
               <img src='img/pink-logo.svg' width="185" height="52" alt="Логотип фирмы Pink">
             </a>
           </li>
           <li class="portfolio-item">
-            <a href="#">
+            <a href="#"  aria-label="Перейти на страницу интернет-магазина Мишка">
               <img src='img/mishka-logo.svg' width="173" height="84" alt="Логотип интернет-магазина Мишка">
             </a>
           </li>
@@ -180,19 +180,19 @@
       <div class="container">
         <ul class="social-buttons-list">
           <li class="social-button-container">
-            <a class="social-button" href="#" aria-label="Нёрдс вконтакте">
+            <a class="social-button" href="#"  aria-label="Перейти на страницу Нёрдс вконтакте">
               <img class="social-button-icon" src="img/vk-icon.svg" width="26" height="15" alt="">
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="social-button-container">
-            <a class="social-button" href="#" aria-label="Нёрдс на фейсбуке">
+            <a class="social-button" href="#"  aria-label="Перейти на страницу Нёрдс на фейсбуке">
               <img class="social-button-icon" src="img/fb-icon.svg" width="12" height="22" alt="">
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
           <li class="social-button-container">
-            <a class="social-button" href="#" aria-label="Нёрдс в инстаграмме">
+            <a class="social-button" href="#"  aria-label="Перейти на страницу Нёрдс в инстаграмме">
               <img class="social-button-icon" src="img/insta-icon.svg" width="21" height="21" alt="">
               <span class="visually-hidden">Инстаграм</span>
             </a>

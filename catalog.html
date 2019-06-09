@@ -18,14 +18,15 @@
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии дизайна Нёрдс">
         </a>
         <ul class="site-navigation">
-          <li><a href="studio.html">Студия</a></li>
-          <li><a href="clients.html">Клиенты</a></li>
-          <li class="site-navigation-current">
+          <li><a href="studio.html" aria-label="Перейти на страницу Студии">Студия</a></li>
+          <li><a href="clients.html" aria-label="Перейти на страницу Клиентов">Клиенты</a></li>
+          <li class="site-navigation-current" aria-current="page">
+            <span class="visually-hidden">Текущий пункт:</span>
             <a href="catalog.html">Магазин</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="contacts.html" aria-label="Перейти на страницу Контактов">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
-          <li><a href="basket.html">Корзина</a></li>
+          <li><a href="basket.html" aria-label="Перейти в Корзину">Корзина</a></li>
         </ul>
       </nav>
     </div>
@@ -50,11 +51,11 @@
                   <div class="toggle toggle-max"></div>
                 </div>
                 <div class="price-controls">
-                  <label class="price-low">
+                  <label class="price-low" aria-label="Установить минимальную цену">
                     ОТ
                     <input type=text name="price-low" value="0">
                   </label>
-                  <label class="price-high">
+                  <label class="price-high" aria-label="Установить максимальную цену">
                     ДО
                     <input type=text name="price-high" value="15 000">
                   </label>
@@ -66,21 +67,21 @@
               <div class="filters-grids">
                 <ul>
                   <li class="filters-grids-item" tabindex="0">
-                    <label class="radio-container">
+                    <label class="radio-container" aria-label="Выбрать вид сетки: Адаптивная">
                       <input type="radio" name="grid" value="Адаптивная" checked>
                       <span class="radio-mark"></span>
                       Адаптивная
                     </label>
                   </li>
                   <li class="filters-grids-item" tabindex="0">
-                    <label class="radio-container">
+                    <label class="radio-container" aria-label="Выбрать вид сетки: Фиксированная">
                       <input type="radio" name="grid" value="Фиксированная">
                       <span class="radio-mark"></span>
                       Фиксированная
                     </label>
                   </li>
                   <li class="filters-grids-item" tabindex="0">
-                    <label class="radio-container">
+                    <label class="radio-container" aria-label="Выбрать вид сетки: Резиновая">
                       <input type="radio" name="grid" value="Резиновая">
                       <span class="radio-mark"></span>
                       Резиновая
@@ -94,35 +95,35 @@
               <div class="filters-features">
                 <ul>
                   <li class="filters-features-item" tabindex="0">
-                    <label class="checkbox-container">
+                    <label class="checkbox-container" aria-label="Выбрать особенность макета: Слайдер">
                       <input type="checkbox" name="features" value="Слайдер" checked>
                       <span class="checkbox-mark"></span>
                       Слайдер
                     </label>
                   </li>
                   <li class="filters-features-item" tabindex="0">
-                    <label class="checkbox-container">
+                    <label class="checkbox-container" aria-label="Выбрать особенность макета: Блок преимуществ">
                       <input type="checkbox" name="features" value="Блок преимуществ">
                       <span class="checkbox-mark"></span>
                       Блок преимуществ
                     </label>
                   </li>
                   <li class="filters-features-item" tabindex="0">
-                    <label class="checkbox-container">
+                    <label class="checkbox-container" aria-label="Выбрать особенность макета Новости">
                       <input type="checkbox" name="features" value="Новости" checked>
                       <span class="checkbox-mark"></span>
                       Новости
                     </label>
                   </li>
                   <li class="filters-features-item" tabindex="0">
-                    <label class="checkbox-container">
+                    <label class="checkbox-container" aria-label="Выбрать особенность макета: Галерея">
                       <input type="checkbox" name="features" value="Галерея">
                       <span class="checkbox-mark"></span>
                       Галерея
                     </label>
                   </li>
                   <li class="filters-features-item" tabindex="0">
-                    <label class="checkbox-container">
+                    <label class="checkbox-container" aria-label="Выбрать особенность макета: Корзина">
                       <input type="checkbox" name="features" value="Корзина">
                       <span class="checkbox-mark"></span>
                       Корзина
@@ -132,7 +133,7 @@
               </div>
               <!-- <a class="filters-button" href="#">Показать</a> -->
             </fieldset>
-            <button class="button" type="submit">Показать</button>
+            <button class="button" type="submit" aria-label="Показать макеты по выбранным параметрам">Показать</button>
           </form>
         </div>
         <div class="catalog-content">
@@ -140,9 +141,10 @@
             <h2 class="visually-hidden">Фильтр сортировки</h2>
             <p>Сортировать:</p>
             <ul class="sorting-type-list">
-              <li><a class="sorting-button sorting-button-current" href="#">По цене</a></li>
-              <li><a class="sorting-button" href="#">По типу</a></li>
-              <li><a class="sorting-button" href="#">По названию</a></li>
+              <li><a class="sorting-button sorting-button-current" href="#" aria-label="Сортировать макеты: по цене">По
+                  цене</a></li>
+              <li><a class="sorting-button" href="#" aria-label="Сортировать макеты: по типу">По типу</a></li>
+              <li><a class="sorting-button" href="#" aria-label="Сортировать макеты: по названию">По названию</a></li>
             </ul>
             <ul class="sorting-arrows">
               <li>
@@ -163,9 +165,10 @@
               <img src="img/img-sedona.jpg" width="360" height="576" alt="Карточка макета Sedona">
               <div class="catalog-item-description">
                 <div class="item-container">
-                  <a href="catalog-item-sedona.html">Sedona</a>
+                  <a href="catalog-item-sedona.html" aria-label="Перейтри на страницу макета: Sedona">Sedona</a>
                   <p>Информационный сайт для туристов</p>
-                  <button class="buy-button" type="button"><span>9 900 РУБ.</span></button>
+                  <button class="buy-button" type="button" aria-label="Добавить в корзину макет ценой:"><span>9 900
+                      РУБ.</span></button>
                 </div>
               </div>
             </li>
@@ -173,10 +176,11 @@
               <img src="img/img-pink.jpg" width="360" height="576" alt="Карточка макета Pink">
               <div class="catalog-item-description">
                 <div class="item-container">
-                  <a href="catalog-item-pink.html">Pink App</a>
+                  <a href="catalog-item-pink.html" aria-label="Перейтри на страницу макета: Pink">Pink App</a>
                   <p>Продуктовый лендинг
                     приложения для iOS и Android</p>
-                  <button class="buy-button" type="button"><span>9 900 РУБ.</span></button>
+                  <button class="buy-button" type="button" aria-label="Добавить в корзину макет ценой:"><span>9 900
+                      РУБ.</span></button>
                 </div>
               </div>
             </li>
@@ -184,10 +188,12 @@
               <img src="img/img-barbershop.jpg" width="360" height="576" alt="Карточка макета Бородинский">
               <div class="catalog-item-description">
                 <div class="item-container">
-                  <a href="catalog-item-barbershop.html">Barbershop</a>
+                  <a href="catalog-item-barbershop.html"
+                    aria-label="Перейтри на страницу макета: Бородинский">Barbershop</a>
                   <p>Сайт салона красоты.
                     Для мужчин, да.</p>
-                  <button class="buy-button" type="button"><span>9 900 РУБ.</span></button>
+                  <button class="buy-button" type="button" aria-label="Добавить в корзину макет ценой:"><span>9 900
+                      РУБ.</span></button>
                 </div>
               </div>
             </li>
@@ -195,10 +201,11 @@
               <img src="img/img-mishka.jpg" width="360" height="576" alt="Карточка макета Mishka">
               <div class="catalog-item-description">
                 <div class="item-container">
-                  <a href="catalog-item-mishka.html">MISHKA</a>
+                  <a href="catalog-item-mishka.html" aria-label="Перейтри на страницу макета: MISHKA">MISHKA</a>
                   <p>Интернет-магазин
                     вязаных игрушек</p>
-                  <button class="buy-button" type="button"><span>9 900 РУБ.</span></button>
+                  <button class="buy-button" type="button" aria-label="Добавить в корзину макет ценой:"><span>9 900
+                      РУБ.</span></button>
                 </div>
               </div>
             </li>
@@ -206,9 +213,10 @@
               <img src="img/img-aplus.jpg" width="360" height="576" alt="Карточка макета A Plus">
               <div class="catalog-item-description">
                 <div class="item-container">
-                  <a href="catalog-item-sedona.html">A Plus</a>
+                  <a href="catalog-item-sedona.html" aria-label="Перейтри на страницу макета: A Plus">A Plus</a>
                   <p>Лендинг курсов повышения квалификации</p>
-                  <button class="buy-button" type="button"><span>9 900 РУБ.</span></button>
+                  <button class="buy-button" type="button" aria-label="Добавить в корзину макет ценой:"><span>9 900
+                      РУБ.</span></button>
                 </div>
               </div>
             </li>
@@ -216,10 +224,11 @@
               <img src="img/img-kvast.jpg" width="360" height="576" alt="Карточка макета Kvast">
               <div class="catalog-item-description">
                 <div class="item-container">
-                  <a href="catalog-item-sedona.html">КВАСТ</a>
+                  <a href="catalog-item-sedona.html" aria-label="Перейтри на страницу макета: КВАСТ">КВАСТ</a>
                   <p>Промо-сайт производителя
                     крафтового кваса</p>
-                  <button class="buy-button" type="button"><span>9 900 РУБ.</span></button>
+                  <button class="buy-button" type="button" aria-label="Добавить в корзину макет ценой:"><span>9 900
+                      РУБ.</span></button>
                 </div>
               </div>
             </li>
@@ -227,16 +236,16 @@
           <div class="pagination">
             <ul class="pagination-list">
               <li class="pagination-item pagination-item-current">
-                <a href="#">1</a>
+                <a href="#" aria-label="Текущая страница">1</a>
               </li>
               <li class="pagination-item">
-                <a href="#">2</a>
+                <a href="#" aria-label="Перейти на вторую страницу">2</a>
               </li>
               <li class="pagination-item">
-                <a href="#">3</a>
+                <a href="#" aria-label="Перейти на третью страницу">3</a>
               </li>
               <li class="pagination-item">
-                <a href="#">Следующая</a>
+                <a href="#" aria-label="Перейти на следующую страницу">Следующая</a>
               </li>
             </ul>
           </div>
@@ -269,19 +278,19 @@
       <div class="container">
         <ul class="social-buttons-list">
           <li class="social-button-container">
-            <a class="social-button" href="#" aria-label="Нёрдс вконтакте">
+            <a class="social-button" href="#" aria-label="Перейти на страницу Нёрдс вконтакте">
               <img class="social-button-icon" src="img/vk-icon.svg" width="26" height="15" alt="">
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="social-button-container">
-            <a class="social-button" href="#" aria-label="Нёрдс на фейсбуке">
+            <a class="social-button" href="#" aria-label="Перейти на страницу Нёрдс на фейсбуке">
               <img class="social-button-icon" src="img/fb-icon.svg" width="12" height="22" alt="">
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
           <li class="social-button-container">
-            <a class="social-button" href="#" aria-label="Нёрдс в инстаграмме">
+            <a class="social-button" href="#" aria-label="Перейти на страницу Нёрдс в инстаграмме">
               <img class="social-button-icon" src="img/insta-icon.svg" width="21" height="21" alt="">
               <span class="visually-hidden">Инстаграм</span>
             </a>

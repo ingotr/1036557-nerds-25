@@ -1668,7 +1668,7 @@ tr:last-child td {
 }
 
 .writeus-item:nth-child(3) {
-  width: 760px;
+  width: 780px;
   margin-bottom: 47px;
 }
 
@@ -1695,23 +1695,28 @@ tr:last-child td {
 }
 
 .writeus-item:nth-child(3) .writeus-item-input {
-  width: 760px;
-  height: 118px;
-  padding-top: 14px;
+  width: 780px;
+  /* height: 118px; */
+  padding-top: 16px;
+  padding-bottom: 114px;
+
+  box-sizing: border-box;
 }
 
 .writeus-item-input::placeholder {
   font-size: 16px;
   font-weight: 400;
+  line-height: 18px;
   color: #444444;
 
   opacity: 0.5;
 }
 
 .writeus-item:nth-child(3) .writeus-item-input::placeholder {
-  padding-left: 15px;
+  /* padding-left: 15px; */
 
-  line-height: 18px;
+  text-align: start;
+  vertical-align: top;
 }
 
 .writeus-button {
