@@ -141,7 +141,7 @@ header,
 /*  */
 /* Раздел слайдера */
 
-@keyframes fade {
+/* @keyframes fade {
   0% {
     opacity: 0.4;
   }
@@ -153,7 +153,7 @@ header,
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
-}
+} */
 
 .slider-catalog {
   margin: 0;
@@ -526,7 +526,7 @@ header,
   text-transform: uppercase;
 }
 
-.about-studio-item ul{
+.about-studio-features{
   margin: 0;
   margin-top: 24px;
   margin-left: 36px;
@@ -535,14 +535,14 @@ header,
   list-style: none;
 }
 
-.about-studio-item ul li{
+.about-studio-features li{
   position: relative;
   margin-bottom: 24px;
 
   line-height: 24px;
 }
 
-.about-studio-item ul li:before{
+.about-studio-features li:before{
   position: absolute;
   content: "";
   top: 8px;
@@ -588,7 +588,7 @@ header,
   padding: 0;
 }
 
-tr:first-child td {
+.table-percent {
   position: relative;
 
   width: 122px;
@@ -598,7 +598,7 @@ tr:first-child td {
   line-height: 47px;
 }
 
-tr:first-child td sup{
+.table-percent sup {
   position: absolute;
   top: 3px;
 
@@ -666,23 +666,13 @@ tr:last-child td {
 }
 
 .contacts .container {
-  width: 1440px;
-}
-
-.contacts-card {
-  width: 319px;
-  height: 308px;
-
-  text-align: center;
-  vertical-align: middle;
-
-  background-color: #ffffff;
+  width: 100%;
 }
 
 .map {
   position: relative;
 
-  width: 1440px;
+  width: 100%;
   height: 416px;
   margin: 0;
   padding: 0;
@@ -746,7 +736,8 @@ tr:last-child td {
   border-radius: 3px;
 }
 
-.contact-button:hover {
+.contact-button:hover,
+.contact-button:focus {
   background-color: #e74246;
 }
 
@@ -761,7 +752,7 @@ tr:last-child td {
   padding-bottom: 5px;
   padding-left: 5px;
 
-  font-family: Roboto;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
@@ -817,6 +808,22 @@ tr:last-child td {
 
   border: none;
 }
+
+/* .filters-price:hover,
+.filters-price:focus,
+.filters-price .range-controls:hover,
+.filters-price .range-controls:focus,
+.filters-grids:hover,
+.filters-grids:focus,
+.filters-grids-item:hover,
+.filters-grids-item:focus,
+.filters-features:hover,
+.filters-features:focus,
+.filters-features-item:hover
+.filters-features-item:focus {
+
+  outline: 1px solid blue;
+} */
 
 .radio-container {
   display: block;
@@ -993,7 +1000,7 @@ tr:last-child td {
   margin-bottom: 50px;
   padding: 8px 10px;
 
-  font-family: Roboto, Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   text-align: center;
 
   border: none;

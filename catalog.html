@@ -6,7 +6,7 @@
   <title>HTML Academy: Нёрдс - Каталог</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -42,7 +42,7 @@
             <fieldset class="filters-block-price">
               <legend>Стоимость:</legend>
               <div class="filters-price">
-                <div class="range-controls">
+                <div class="range-controls" tabindex="0">
                   <div class="scale">
                     <div class="bar"></div>
                   </div>
@@ -65,21 +65,21 @@
               <legend>Сетка:</legend>
               <div class="filters-grids">
                 <ul>
-                  <li class="filters-grids-item">
+                  <li class="filters-grids-item" tabindex="0">
                     <label class="radio-container">
                       <input type="radio" name="grid" value="Адаптивная" checked>
                       <span class="radio-mark"></span>
                       Адаптивная
                     </label>
                   </li>
-                  <li class="filters-grids-item">
+                  <li class="filters-grids-item" tabindex="0">
                     <label class="radio-container">
                       <input type="radio" name="grid" value="Фиксированная">
                       <span class="radio-mark"></span>
                       Фиксированная
                     </label>
                   </li>
-                  <li class="filters-grids-item">
+                  <li class="filters-grids-item" tabindex="0">
                     <label class="radio-container">
                       <input type="radio" name="grid" value="Резиновая">
                       <span class="radio-mark"></span>
@@ -93,35 +93,35 @@
               <legend>Особенности:</legend>
               <div class="filters-features">
                 <ul>
-                  <li class="filters-features-item">
+                  <li class="filters-features-item" tabindex="0">
                     <label class="checkbox-container">
                       <input type="checkbox" name="features" value="Слайдер" checked>
                       <span class="checkbox-mark"></span>
                       Слайдер
                     </label>
                   </li>
-                  <li class="filters-features-item">
+                  <li class="filters-features-item" tabindex="0">
                     <label class="checkbox-container">
                       <input type="checkbox" name="features" value="Блок преимуществ">
                       <span class="checkbox-mark"></span>
                       Блок преимуществ
                     </label>
                   </li>
-                  <li class="filters-features-item">
+                  <li class="filters-features-item" tabindex="0">
                     <label class="checkbox-container">
                       <input type="checkbox" name="features" value="Новости" checked>
                       <span class="checkbox-mark"></span>
                       Новости
                     </label>
                   </li>
-                  <li class="filters-features-item">
+                  <li class="filters-features-item" tabindex="0">
                     <label class="checkbox-container">
                       <input type="checkbox" name="features" value="Галерея">
                       <span class="checkbox-mark"></span>
                       Галерея
                     </label>
                   </li>
-                  <li class="filters-features-item">
+                  <li class="filters-features-item" tabindex="0">
                     <label class="checkbox-container">
                       <input type="checkbox" name="features" value="Корзина">
                       <span class="checkbox-mark"></span>
@@ -159,7 +159,7 @@
           </div>
           <h2 class="visually-hidden">Список макетов</h2>
           <ul class="catalog-list">
-            <li class="catalog-item">
+            <li class="catalog-item" tabindex="0">
               <img src="img/img-sedona.jpg" width="360" height="576" alt="Карточка макета Sedona">
               <div class="catalog-item-description">
                 <div class="item-container">
@@ -169,7 +169,7 @@
                 </div>
               </div>
             </li>
-            <li class="catalog-item">
+            <li class="catalog-item" tabindex="0">
               <img src="img/img-pink.jpg" width="360" height="576" alt="Карточка макета Pink">
               <div class="catalog-item-description">
                 <div class="item-container">
@@ -180,7 +180,7 @@
                 </div>
               </div>
             </li>
-            <li class="catalog-item">
+            <li class="catalog-item" tabindex="0">
               <img src="img/img-barbershop.jpg" width="360" height="576" alt="Карточка макета Бородинский">
               <div class="catalog-item-description">
                 <div class="item-container">
@@ -191,7 +191,7 @@
                 </div>
               </div>
             </li>
-            <li class="catalog-item">
+            <li class="catalog-item" tabindex="0">
               <img src="img/img-mishka.jpg" width="360" height="576" alt="Карточка макета Mishka">
               <div class="catalog-item-description">
                 <div class="item-container">
@@ -202,7 +202,7 @@
                 </div>
               </div>
             </li>
-            <li class="catalog-item">
+            <li class="catalog-item" tabindex="0">
               <img src="img/img-aplus.jpg" width="360" height="576" alt="Карточка макета A Plus">
               <div class="catalog-item-description">
                 <div class="item-container">
@@ -212,7 +212,7 @@
                 </div>
               </div>
             </li>
-            <li class="catalog-item">
+            <li class="catalog-item" tabindex="0">
               <img src="img/img-kvast.jpg" width="360" height="576" alt="Карточка макета Kvast">
               <div class="catalog-item-description">
                 <div class="item-container">
@@ -247,22 +247,20 @@
     <section class="contacts">
       <h2 class="visually-hidden">Секция контактов</h2>
       <div class="container">
-        <div class="contacts-card">
-          <div class="map">
-            <iframe src="https://yandex.ru/map-widget/v1/-/CCC3fJLg" width="1440" height="416" frameborder="1"
-              allowfullscreen="true">
-            </iframe>
-            <div class="card-wrapper">
-              <h3>NЁRDS DESIGN STUDIO</h3>
-              <p>191186, Санкт-Петербург,<br>
-                ул. Б. Конюшенная, д. 19/8,<br>
+        <div class="map">
+          <iframe src="https://yandex.ru/map-widget/v1/-/CCC3fJLg" width="100%" height="416" frameborder="1"
+            allowfullscreen="true">
+          </iframe>
+          <div class="card-wrapper">
+            <h3>NЁRDS DESIGN STUDIO</h3>
+            <p>191186, Санкт-Петербург,<br>
+              ул. Б. Конюшенная, д. 19/8,<br>
 
-                тел. +7 (812) 275-75-75
-              </p>
-              <a class="button modal-writeus" href="contact-form.html" aria-label="Вызвать форму обратной связи">
-                Напишите нам
-              </a>
-            </div>
+              тел. +7 (812) 275-75-75
+            </p>
+            <a class="button modal-writeus" href="contact-form.html" aria-label="Вызвать форму обратной связи">
+              Напишите нам
+            </a>
           </div>
         </div>
       </div>
@@ -327,7 +325,7 @@
     </div>
 
   </main>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
