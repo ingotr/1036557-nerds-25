@@ -716,10 +716,16 @@ tr:last-child td {
   height: 416px;
   margin: 0;
   padding: 0;
+}
 
-  background-image: url("../img/map-marker.png") ,url("../img/map.png");
-  background-position: 822px 85px ,center 0;
-  background-repeat: no-repeat, no-repeat;
+.map img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+
+  margin: 0 auto;
 }
 
 .map iframe {
