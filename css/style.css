@@ -1190,6 +1190,7 @@ tr:last-child td {
   align-content: center;
   width: 760px;
   margin: 0;
+  margin-bottom: 52px;
   padding: 0;
 }
 
@@ -1265,6 +1266,7 @@ tr:last-child td {
 
 .catalog {
   margin: 0;
+  margin-bottom: 57px;
   padding: 0;
 }
 
@@ -1272,7 +1274,6 @@ tr:last-child td {
   width: 760px;
   margin: 0;
   margin-top: 63px;
-  margin-bottom: 10px;
   padding: 0;
 }
 
@@ -1284,7 +1285,7 @@ tr:last-child td {
 
   width: 760px;
   margin: 0;
-  margin-top: 52px;
+  margin-bottom: 32px;
   padding: 0;
 
   list-style: none;
@@ -1295,7 +1296,7 @@ tr:last-child td {
 
   width: 360px;
   margin-left: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
   border-top: 40px solid #eaeaea;
   border-radius: 3px;
