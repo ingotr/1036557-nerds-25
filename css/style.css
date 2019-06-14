@@ -1585,12 +1585,14 @@ tr:last-child td {
 .modal {
   position: fixed;
   top: 120px;
-  left: 25%;
+  left: 50%;
   display: none;
+  z-index: 3;
 
   width: 960px;
   height: 661px;
   margin: 0;
+  margin-left: -480px;
   padding: 0;
 
   background-color: #ffffff;
