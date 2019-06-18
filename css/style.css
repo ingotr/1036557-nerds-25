@@ -359,7 +359,6 @@ header,
   padding: 0;
   padding-bottom: 60px;
 
-  border-bottom: 2px solid #eeeeee;
   list-style: none;
 }
 
@@ -660,8 +659,6 @@ tr:last-child td {
   padding-left: 10px;
 
   list-style: none;
-  border-top: 2px solid #eeeeee;
-  border-bottom: 2px solid #eeeeee;
 }
 
 .portfolio-item {
@@ -1316,6 +1313,10 @@ tr:last-child td {
   padding-left: 70px;
 
   line-height: 1.5;
+}
+
+.item-container p {
+  word-break: break-word;
 }
 
 .catalog-item-description a {
