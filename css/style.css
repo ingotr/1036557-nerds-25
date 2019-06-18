@@ -360,6 +360,7 @@ header,
   padding-bottom: 60px;
 
   list-style: none;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .services-catalog-item .services-catalog-description {
@@ -659,13 +660,34 @@ tr:last-child td {
   padding-left: 10px;
 
   list-style: none;
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .portfolio-item {
+  position: relative;
+
   width: 220px;
   padding: 10px;
 
   opacity: 0.3;
+}
+
+.portfolio-item::after {
+  content: "";
+
+  position: absolute;
+  left: 270px;
+
+  width: 2px;
+  height: 56px;
+  vertical-align: middle;
+
+  background-color: #eeeeee;
+}
+
+.portfolio-item:nth-child(4n)::after {
+  display: none;
 }
 
 .portfolio-item:nth-child(1) {
